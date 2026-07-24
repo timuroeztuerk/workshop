@@ -1,6 +1,19 @@
-\documentclass{beamer}
+\documentclass[10pt]{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{ulem}
+\usepackage{appendixnumberbeamer}
 \usepackage{hyperref}
+\usepackage{ragged2e}
+\setbeamersize{text margin left=0.5cm, text margin right=0.5cm}
+\definecolor{unigreen}{RGB}{3,138,94}
+\usecolortheme[named=unigreen]{structure}
+\beamertemplatenavigationsymbolsempty
 
 \title{AI Workflows for Empirical Research}
 \subtitle{Data \& Model Security for Agentic Tools}
@@ -22,8 +35,7 @@
           training by default.
     \item Standard API abuse-monitoring logs may retain customer content for
           up to 30 days.
-    \item Zero Data Retention is eligibility-based and does not cover every
-          capability.
+    \item Zero Data Retention -> Business
     \item Connectors and MCP servers introduce separate providers and policies.
   \end{itemize}
   \vfill
@@ -31,13 +43,12 @@
   \href{https://openai.com/enterprise-privacy/}{\beamergotobutton{OpenAI enterprise privacy}}
 \end{frame}
 
-\begin{frame}{Documents can contain instructions}
+\begin{frame}{Documents can contain instructions!}
   \begin{itemize}
     \item PDFs, webpages, READMEs, issue text, emails, and CSV cells can contain
           indirect prompt injections.
     \item An agent may interpret hostile text inside a source as an instruction.
-    \item Possible results include data exfiltration, altered code, changed
-          samples, or biased summaries.
+    \item Possible results include injections or data change.
     \item Researchers have already hidden instructions in papers to influence
           AI-assisted peer review.
     \item Retrieved content should be treated as untrusted input.
@@ -49,12 +60,10 @@
 
 \begin{frame}{The dangerous combination}
   \begin{itemize}
-    \item The highest-risk setup combines private data, untrusted content, and
+    \item The highest-risk setup combines private data and
           an outbound communication channel.
-    \item Example: restricted microdata + a malicious PDF + unrestricted web
-          access.
-    \item Minimize the files, databases, and credentials available to the agent.
-    \item Keep network access off or allowlist exact destinations.
+    \item Minimize the files, databases, and credentials available to the agent. I haven't let an unrestricted run so far, and capabilities are ok!
+    \item Start with full approval requirements!
     \item Require approval for data export, external writes, and other
           consequential actions.
   \end{itemize}
@@ -63,17 +72,15 @@
   \href{https://developers.openai.com/api/docs/guides/tools-connectors-mcp}{\beamergotobutton{OpenAI MCP safety}}
 \end{frame}
 
-\begin{frame}{Pseudonymised does not mean anonymous}
+\begin{frame}{LLMs are smart: Pseudonymised does not mean anonymous}
   \begin{itemize}
     \item Removing names rarely eliminates re-identification risk in rich
           microdata.
     \item Dates, geography, occupation, firms, rare outcomes, and linked
           datasets can reconnect records to people.
-    \item Pseudonymised records normally remain personal data under GDPR.
+    \item Pseudonymised records normally remain personal data in EU.
     \item A model is anonymous only when identification and extraction of
           personal data are both very unlikely.
-    \item Dataset licences and research-data-centre rules may be stricter than
-          GDPR or vendor terms.
   \end{itemize}
   \vfill
   \href{https://www.edpb.europa.eu/documents/opinion-of-the-board-art-64/opinion-282024-on-certain-data-protection-aspects-related-to_en}{\beamergotobutton{EDPB Opinion 28/2024}}\quad
@@ -109,68 +116,46 @@
           applicable.
   \end{itemize}
   \vfill
-  \href{https://openai.com/index/hugging-face-model-evaluation-security-incident/}{\beamergotobutton{OpenAI incident}}\quad
-  \href{https://huggingface.co/blog/security-incident-july-2026}{\beamergotobutton{Hugging Face incident}}\quad
+  \href{https://openai.com/index/hugging-face-model-evaluation-security-incident/}{\beamergotobutton{OpenAI incident}}
+  \href{https://huggingface.co/blog/security-incident-july-2026}{\beamergotobutton{Hugging Face incident}}
   \href{https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence}{\beamergotobutton{EU action plan}}
-
-  \vspace{0.12cm}
-  \href{https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/updated-era-living-guidelines-responsible-use-generative-ai-research-2026-05-08_en}{\beamergotobutton{ERA update}}\quad
-  \href{https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/}{\beamergotobutton{Microsoft Security}}\quad
+  \href{https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/updated-era-living-guidelines-responsible-use-generative-ai-research-2026-05-08_en}{\beamergotobutton{ERA update}}
+  \href{https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/}{\beamergotobutton{Microsoft Security}}
   \href{https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai}{\beamergotobutton{EU AI Act}}
 \end{frame}
 
 \begin{frame}{Main risks for empirical research}
   \begin{itemize}
-    \item \textbf{Data disclosure:} survey, tax, firm, or interview microdata
-          enter prompts, logs, or external tools.
-    \item \textbf{Prompt injection:} a paper, webpage, or dataset changes the
+    \item \textbf{Prompt injection (rare if you are careful):} a paper, webpage, or dataset changes the
           agent's instructions.
-    \item \textbf{Excess privilege:} the agent inherits broad Git, database,
+    \item \textbf{Privileges:} the agent inherits broad Git, database,
           cloud, or filesystem access.
-    \item \textbf{Supply chain:} a package, skill, plugin, or MCP server is
+    \item \textbf{Chain of Tools (!!):} a package, skill, plugin, or MCP server is
           malicious or compromised.
     \item \textbf{Research integrity:} generated code introduces a bad merge,
-          wrong specification, or fabricated citation.
+          wrong specification, or fabricated citation. This happens more often than you think!
     \item \textbf{Output leakage:} small cells, logs, residuals, or traces
           disclose protected information.
   \end{itemize}
   \vfill
-  \href{https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/}{\beamergotobutton{OWASP Agentic Top 10}}\quad
+  \href{https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/}{\beamergotobutton{OWASP Agentic Top 10}}
   \href{https://www.nist.gov/publications/adversarial-machine-learning-taxonomy-and-terminology-attacks-and-mitigations-0}{\beamergotobutton{NIST adversarial ML}}
 \end{frame}
 
-\begin{frame}{Recommended operating pattern (I)}
+\begin{frame}{Recommendedations for security}
   \begin{itemize}
-    \item Classify data as public/synthetic, internal/licensed/pseudonymised, or
-          identifiable/confidential/secure-use.
-    \item Check the data-use agreement, ethics or IRB conditions, data-owner
-          requirements, and institutional policy.
-    \item Prefer schemas, codebooks, synthetic rows, and aggregates over raw data.
-    \item Keep restricted raw data outside the agent workspace or read-only
-          inside an approved secure environment.
-    \item Use an approved institutional service, isolated version-controlled
-          workspace, and least-privilege identity.
-  \end{itemize}
-  \vfill
-  \href{https://ec.europa.eu/eurostat/web/microdata}{\beamergotobutton{Eurostat microdata}}\quad
-  \href{https://www.forschungsdatenzentrum.de/en/access}{\beamergotobutton{German Research Data Centres}}
-\end{frame}
-
-\begin{frame}{Recommended operating pattern (II)}
-  \begin{itemize}
+\item Keep raw data and environment variablesoutside the agent workspace.
     \item Keep network access off or allowlist exact destinations.
     \item Require approval for installation, export, deletion, publication,
-          messaging, and Git pushes.
-    \item Use trusted connectors and pinned, verified dependencies.
-    \item Review diffs and test joins, uniqueness, missingness, units, sample
-          size, and treatment timing.
-    \item Save the provenance record and rerun the project from a clean environment.
-    \item If compromise is suspected: stop the agent, revoke credentials,
-          inspect logs and diffs, restore, and notify.
+          messaging, and Git pushes!
+    \item Use only trusted connectors, skills and MCPs.
+    \item Always review the code and the output!
   \end{itemize}
   \vfill
-  \href{https://openai.com/index/running-codex-safely/}{\beamergotobutton{OpenAI: running Codex safely}}\quad
+  \href{https://openai.com/index/running-codex-safely/}{\beamergotobutton{OpenAI: running Codex safely}}
   \href{https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/}{\beamergotobutton{OWASP Agentic Top 10}}
+  \href{https://ec.europa.eu/eurostat/web/microdata}{\beamergotobutton{Eurostat microdata}}
+  \href{https://www.forschungsdatenzentrum.de/en/access}{\beamergotobutton{German Research Data Centres}}
 \end{frame}
 
 \end{document}

@@ -1,0 +1,450 @@
+%\documentclass[draft, 10pt]{beamer}
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{ulem}
+\usepackage{appendixnumberbeamer}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\setbeamersize{text margin left=0.5cm, text margin right=0.5cm}
+
+\definecolor{unigreen}{RGB}{3,138,94}
+\usecolortheme[named=unigreen]{structure}
+\author[Braun and \"{O}zt\"{u}rk]{Sebastian T. Braun\textsuperscript{$\ast$}, Timur \"{O}zt\"{u}rk\textsuperscript{$\ddagger$}}
+\institute[]{\textsuperscript{$\ast$}Kiel Institute for the World Economy, Kiel University, IZA \\ \vspace{1mm}
+             \textsuperscript{$\ddagger$}University of Bayreuth}
+\beamertemplatenavigationsymbolsempty
+
+\graphicspath{
+  {../GSWG2025/images/}
+  {../../paper/figures/}
+  {../../repository/regional/results/figures/}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\title[Confessional Politics]{From Weimar to West Germany:\\Confessional Politics, Party Fragmentation, and the Extreme Right}
+\date[2026]{\today}
+\setbeamercovered{dynamic}
+
+% ============================================================
+% TITLE
+% ============================================================
+\begin{frame}[plain,noframenumbering]
+	\titlepage
+\end{frame}
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+\begin{frame}
+	\frametitle{Motivation}
+	\begin{itemize}
+		\item Why did the Weimar Republic collapse, while the political system of the Federal Republic proved stable?
+		\item Key structural difference: \textcolor{unigreen}{\textbf{fragmentation of the center-right}} in Weimar
+		      \medskip
+		\item \textbf{This paper:} Catholic-Protestant divisions drove that fragmentation---and the Nazi vote
+		\item The CDU's postwar formation as an interdenominational \textit{Volkspartei} broke these dynamics
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{This Paper}
+	\begin{enumerate}
+		\item \textbf{Quasi-experimental design} \\
+		      {\small Compare adjacent Catholic and Protestant parishes at Reformation-era confessional boundaries}
+		      \medskip
+		\item \textbf{Novel parish-level data} \\
+		      {\small 3,180 localities in Baden-Württemberg, 1919--1969 (vs.\ 104 county obs.\ in Falter data)}
+		      \medskip
+		\item \textbf{Survey mechanism evidence} \\
+		      {\small 1968 Landtag survey: Catholics and Protestants had similar preferences; gap reflects church signals and church attachment}
+	\end{enumerate}
+\end{frame}
+
+% ============================================================
+\section{Historical Background}
+% ============================================================
+
+\begin{frame}
+	\frametitle{Historical Background}
+	\framesubtitle{Confessions in Weimar Germany, 1925}
+	\begin{center}
+		\includegraphics[width=0.72\linewidth]{ReligionWeimar1925.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Historical Background}
+	\framesubtitle{Reichstag elections, 1919--1933 \hfill \hyperlink{governments}{\beamergotobutton{Governments}}}
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{elections-weimar-1919-1933.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Historical Background}
+	\framesubtitle{Two very different center-right structures}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\textbf{\textcolor{unigreen}{Catholics}}
+			\begin{itemize}
+				\item Strong \textit{Zentrum} voting norm
+				\item Clergy warned against NSDAP
+				\item Cohesive, well-anchored
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\textbf{\textcolor{unigreen}{Protestants}}
+			\begin{itemize}
+				\item No comparable organizing party
+				\item Vote dispersed: DDP, DNVP, DVP, \ldots
+				\item Structurally \textit{vulnerable} to Nazi consolidation
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+% ============================================================
+\section{Conceptual Framework}
+% ============================================================
+
+\begin{frame}
+	\frametitle{Conceptual Framework}
+	\framesubtitle{Spenkuch and Tillmann (2018) adapted to our setting}
+	$$
+		U_i^r(X)= \left\{\begin{array}{lr}
+			-(X-t_i)^2+\lambda^r & \text{for } X = Z \text{ (Centre Party)}, \\
+			-(X-t_i)^2           & \text{otherwise}
+		\end{array}
+		\right.
+	$$
+	\begin{itemize}
+		\item Same preference distribution; differ only in norm: $\lambda^c > 0$, $\lambda^p < 0$
+		\item \textbf{Testable:} any confessional gap reflects \textit{norms}, not preferences
+	\end{itemize}
+	\medskip
+	\textbf{Hypotheses (Weimar):}
+	\begin{enumerate}
+		\item Fragmentation hump-shaped in Catholic share (1928); collapses in Protestant parishes by 1932
+		\item Higher Catholic share $\Rightarrow$ lower NSDAP vote in 1932
+	\end{enumerate}
+	\textbf{Hypotheses (FRG):}
+	\begin{enumerate}
+		\item Fragmentation hump weakens after 1949 and dissolves by 1965 (CDU integrates denominations)
+		\item Catholic parishes show lower NPD support in late 1960s, but gap much smaller than in 1932
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conceptual Framework: Weimar}
+	\framesubtitle{Voting by voter type and confession}
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{voting-model-W.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conceptual Framework: Weimar}
+	\framesubtitle{Predicted fragmentation by local Catholic share}
+	\begin{center}
+		\includegraphics[width=0.72\linewidth]{fragmentation-index-by-scenario.pdf}
+	\end{center}
+	Effective number of parties: $N = 1/\sum_j p_j^2$
+\end{frame}
+
+% ============================================================
+\section{Empirical Strategy}
+% ============================================================
+
+\begin{frame}[label=identification]
+	\frametitle{Empirical Strategy}
+	\framesubtitle{\textit{Cuius regio, eius religio} --- comparing adjacent parishes}
+	\begin{itemize}
+		\item \textbf{Data:} 3,180 parishes (Baden and Württemberg), 1928--1969; 1968 Landtag survey ($N=895$)
+		\item Post-1555 territorial fragmentation produced adjacent Catholic and Protestant parishes
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.80\linewidth]{election-religion-map.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Empirical Strategy}
+	\framesubtitle{Identification strategies}
+	\[y_{it} = \alpha + \beta\, CathShare_{i} + f(lat_i, lon_i) + \bm{X}_{it}\bm{\gamma} + \varepsilon_{it}\]
+	\begin{enumerate}
+		\item \textbf{Within-county:} county fixed effects (103 counties)
+		\item \textbf{Within-neighborhood:} demean within 10 km radius (Mueller 2024; Becker 2025)
+		\item \textbf{Religious enclaves:} 44 enclave cases vs.\ surrounding parishes \hyperlink{enclaves}{\beamergotobutton{Example}}
+	\end{enumerate}
+	\medskip
+	Large raw differences between Catholic and Protestant parishes vanish within counties and neighborhoods. \hyperlink{balancing}{\beamergotobutton{Balancing table}}
+\end{frame}
+
+% ============================================================
+\section{Results: Weimar Republic}
+% ============================================================
+
+\begin{frame}
+	\frametitle{Fragmentation in Weimar}
+	\framesubtitle{Baden, May 1928 and November 1932}
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{fragmentation-baden-1928-1932.pdf}
+	\end{center}
+	\begin{itemize}
+		\item \textbf{1928:} Inverted U-shape confirmed
+		\item \textbf{1932:} NSDAP consolidated Protestant vote; fragmentation collapsed in Protestant/mixed parishes
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[label=resultsNSDAP]
+	\frametitle{Nazi Vote, November 1932}
+	\framesubtitle{Baden --- OLS regressions}
+	\makebox[1.0\linewidth][c]{
+		\begin{footnotesize}
+			\begin{tabular}{lcccc}
+				\toprule
+				               & (1)         & (2)         & (3)         & (4)         \\
+				               & Baseline    & County FE   & Radius      & Enclaves    \\
+				\midrule
+				Catholics (\%) & $-$0.465*** & $-$0.496*** & $-$0.516*** & $-$0.486*** \\
+				               & (0.027)     & (0.030)     & (0.028)     & (0.072)     \\
+				\midrule
+				Observations   & 1,436       & 1,380       & 1,380       & 385         \\
+				$R^2$          & 0.55        & 0.66        & 0.56        & 0.72        \\
+				Controls       & no          & yes         & yes         & yes         \\
+				\bottomrule
+				\multicolumn{5}{l}{\scriptsize County-clustered (enclave-clustered in col.\ 4) SE. ***, ** = 1\%, 5\%.}
+			\end{tabular}
+		\end{footnotesize}
+	}
+	\begin{itemize}
+		\item All-Catholic vs.\ all-Protestant: $\approx$\textbf{47 pp} lower Nazi vote
+		\item Catholic share alone explains \textbf{53\%} of cross-parish variation \hyperlink{fullNSDAP}{\beamergotobutton{Full table}}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{How Important is Religion?}
+	\framesubtitle{Dominance decomposition of $R^2$ --- Baden, November 1932}
+	\begin{center}
+		\includegraphics[width=0.72\linewidth]{dominance.pdf}
+	\end{center}
+	Catholic share accounts for $\approx$\textbf{75\%} of the model's explained variation.
+\end{frame}
+
+% ============================================================
+\section{Results: Federal Republic}
+% ============================================================
+
+\begin{frame}
+	\frametitle{Fragmentation in the Federal Republic}
+	\framesubtitle{Baden-Württemberg, August 1949 and September 1965}
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{fragmentation-bw-panel-cath1950.pdf}
+	\end{center}
+	\begin{itemize}
+		\item \textbf{1949:} Hump persists but weaker; \textbf{1965:} largely dissolved
+		\item Largest reductions in mixed and Protestant parishes --- CDU's integrative role
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Centre Party (1928) vs.\ CDU (1965)}
+	\framesubtitle{Baden --- CDU gained most ground in Protestant parishes}
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{vote-share-zentrum-cdu-change-panel-baden.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{NPD Support in the Late 1960s}
+	\framesubtitle{Protestant areas remained more susceptible}
+	\makebox[1.0\linewidth][c]{
+		\begin{footnotesize}
+			\begin{tabular}{lcccc}
+				\toprule
+				               & \multicolumn{2}{c}{CDU} & \multicolumn{2}{c}{NPD}                              \\
+				               & 1949                    & 1969                    & 1968 state  & 1969 federal \\
+				\midrule
+				Catholics (\%) & 0.497***                & 0.378***                & $-$0.084*** & $-$0.059***  \\
+				               & (0.023)                 & (0.019)                 & (0.011)     & (0.012)      \\
+				\midrule
+				Obs.           & 1,261                   & 3,117                   & 1,331       & 3,117        \\
+				Within transf. & radius                  & radius                  & radius      & radius       \\
+				\bottomrule
+				\multicolumn{5}{l}{\scriptsize Controls included. County-clustered SE.}
+			\end{tabular}
+		\end{footnotesize}
+	}
+	\begin{itemize}
+		\item CDU stronger in Catholic parishes throughout, but gap narrowed
+		\item NPD gap much smaller than 1932 Nazi vote gap ($-$0.06 vs.\ $-$0.47)
+	\end{itemize}
+\end{frame}
+
+% ============================================================
+\section{Individual-Level Survey Evidence}
+% ============================================================
+
+\begin{frame}
+	\frametitle{NPD Support by Confession}
+	\framesubtitle{1968 Baden-Württemberg Landtag survey (ZA0327, $N=895$)}
+	\begin{center}
+		\includegraphics[width=0.82\linewidth]{NPD_vote_robindicators_by_confession.pdf}
+	\end{center}
+	Protestants substantially more likely to support NPD across all four indicators.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Similar Underlying Political Preferences}
+	\begin{center}
+		\includegraphics[width=0.82\linewidth]{agreement_with_NPD_positions_by_confession.pdf}
+	\end{center}
+	Agreement with NPD positions: \textbf{virtually identical} across confessions $\rightarrow$ preference explanation ruled out.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Church Signals on CDU and NPD}
+	\begin{center}
+		\includegraphics[width=0.82\linewidth]{perception_CDU_NPD_by_church.pdf}
+	\end{center}
+	\begin{itemize}
+		\item 86\% of Catholics: Catholic Church's stance on NPD is ``bad/very bad''
+		\item 24\% of Protestants: Protestant Church's stance on NPD is neutral or positive
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Church Importance and Voting}
+	\begin{center}
+		\includegraphics[width=0.82\linewidth]{LTW1968_CDU_NPD_vote_by_church_importance.pdf}
+	\end{center}
+	\begin{itemize}
+		\item Among the highly devout: NPD support \textit{comparably low} in both confessions
+		\item But 29\% of Catholics vs.\ 18\% of Protestants are in that group
+	\end{itemize}
+\end{frame}
+
+% ============================================================
+\section{Conclusion}
+% ============================================================
+
+\begin{frame}
+	\frametitle{Conclusion}
+	\begin{itemize}
+		\item \textbf{Weimar:} Confessional divisions fragmented the center-right; Catholic share alone explains $>$50\% of the 1932 Nazi vote
+		      \medskip
+		\item \textbf{Federal Republic:} CDU reduced denominational fragmentation substantially; Protestant areas remained more exposed to the NPD
+		      \medskip
+		\item \textbf{Mechanism:} Confessional gap reflects elite influence (church signals + church attachment), not differences in preferences
+		      \medskip
+		\item \textbf{General:} Cross-cleavage parties can mitigate fragmentation risks generated by deep social divisions
+	\end{itemize}
+	\vspace{0.8em}
+	\begin{center}
+		{\large Thank you!} \quad
+		sebastian.braun@kielinstitut.de \quad $\cdot$ \quad timur.oeztuerk@uni-bayreuth.de
+	\end{center}
+\end{frame}
+
+% ============================================================
+\appendix
+% ============================================================
+
+\begin{frame}[label=governments, noframenumbering]
+	\frametitle{Weimar Governments, 1919--1933}
+	\framesubtitle{Source: Lehmann (2010)}
+	\begin{center}
+		\includegraphics[width=0.65\linewidth]{governments.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}[label=enclaves, noframenumbering]
+	\frametitle{Religious Enclaves: Example}
+	\framesubtitle{Emmendingen district, 1932}
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{election-religion-map-enclave_OAEmmendingen.png}
+	\end{center}
+	\begin{flushright}
+		\hyperlink{identification}{\beamergotobutton{Back}}
+	\end{flushright}
+\end{frame}
+
+\begin{frame}[label=balancing, noframenumbering]
+	\frametitle{Balancing Tests}
+	\makebox[\linewidth][c]{
+		\begin{scriptsize}
+			\begin{tabular}{lccc}
+				\toprule
+				                       & Unconditional & Within county & Within 10 km \\
+				\midrule
+				Average elevation (m)  & 104.9***      & 10.2          & $-$0.8       \\
+				Broad river valleys    & 0.071***      & 0.006         & 0.004        \\
+				Loess area             & $-$0.167***   & $-$0.068**    & $-$0.040**   \\
+				Population 1925 (logs) & $-$0.190**    & $-$0.047      & $-$0.063     \\
+				Industry share (\%)    & $-$10.7***    & 1.16          & 0.31         \\
+				\bottomrule
+			\end{tabular}
+		\end{scriptsize}
+	}
+	\begin{flushright}
+		\hyperlink{identification}{\beamergotobutton{Back}}
+	\end{flushright}
+\end{frame}
+
+\begin{frame}[label=fullNSDAP, noframenumbering]
+	\frametitle{Nazi Vote: Full Regression Table}
+	\framesubtitle{Baden, November 1932}
+	\makebox[1.0\linewidth][c]{
+		\begin{tiny}
+			\begin{tabular}{lccccccc}
+				\toprule
+				               & (1)         & (2)         & (3)         & (4)         & (5)         & (6)         & (7)             \\
+				               & Baseline    & + Spatial   & + Controls  & County FE   & Radius      & Enclaves    & $\Delta$ 28--32 \\
+				\midrule
+				Catholics (\%) & $-$0.465*** & $-$0.454*** & $-$0.496*** & $-$0.516*** & $-$0.486*** & $-$0.534*** & $-$0.432***     \\
+				               & (0.027)     & (0.026)     & (0.030)     & (0.028)     & (0.025)     & (0.072)     & (0.026)         \\
+				\midrule
+				Obs.           & 1,436       & 1,380       & 1,380       & 1,380       & 1,380       & 385         & 1,380           \\
+				$R^2$          & 0.55        & 0.57        & 0.62        & 0.66        & 0.56        & 0.72        & 0.46            \\
+				Controls       & no          & no          & yes         & yes         & yes         & yes         & yes             \\
+				\bottomrule
+			\end{tabular}
+		\end{tiny}
+	}
+	\begin{flushright}
+		\hyperlink{resultsNSDAP}{\beamergotobutton{Back}}
+	\end{flushright}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+	\frametitle{Individual-Level Regressions}
+	\framesubtitle{Determinants of CDU and NPD voting, 1968}
+	\makebox[1.0\linewidth][c]{
+		\begin{tiny}
+			\begin{tabular}{lcccccc}
+				\toprule
+				                                  & \multicolumn{3}{c}{CDU vote} & \multicolumn{3}{c}{NPD vote}                                                     \\
+				                                  & (1)                          & (2)                          & (3)      & (4)        & (5)         & (6)         \\
+				\midrule
+				Catholic                          & 0.197***                     & 0.177***                     & 0.131**  & $-$0.038** & $-$0.030*   & $-$0.027    \\
+				Church very important             &                              & 0.211***                     & 0.182*** &            & $-$0.044*** & $-$0.041*** \\
+				Catholic $\times$ Church v.\ imp. &                              &                              & 0.079    &            &             & $-$0.005    \\
+				\midrule
+				Obs.                              & 587                          & 587                          & 587      & 587        & 587         & 587         \\
+				\bottomrule
+				\multicolumn{7}{l}{\scriptsize Controls: age, gender, education, marital status, community size.}
+			\end{tabular}
+		\end{tiny}
+	}
+\end{frame}
+
+\end{document}

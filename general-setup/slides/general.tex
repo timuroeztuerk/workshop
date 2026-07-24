@@ -1,6 +1,19 @@
-\documentclass{beamer}
+\documentclass[10pt]{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{ulem}
+\usepackage{appendixnumberbeamer}
 \usepackage{hyperref}
+\usepackage{ragged2e}
+\setbeamersize{text margin left=0.5cm, text margin right=0.5cm}
+\definecolor{unigreen}{RGB}{3,138,94}
+\usecolortheme[named=unigreen]{structure}
+\beamertemplatenavigationsymbolsempty
 
 \title{AI Workflows for Empirical Research}
 \subtitle{General Setup: Claude Code \& Codex}
@@ -16,16 +29,14 @@
 
 \begin{frame}{The instructions file}
   \begin{itemize}
-    \item Agentic tools read a Markdown file at every session start ---
-          persistent project memory.
-    \item Codex ($+\sim$20 tools) call it \texttt{AGENTS.md}; Claude Code calls
+    \item Agentic tools read a Markdown file at every session start, and with every prompt. Keep it simple.
+    \item Codex calls it \texttt{AGENTS.md}; Claude Code calls
           it \texttt{CLAUDE.md} (and also reads \texttt{AGENTS.md}).
-    \item Open standard since Aug 2025 (Linux Foundation); 60{,}000+ repos.
-          Just Markdown, no required fields.
+    \item Just Markdown, no required fields. It can practically be anything.
     \item Like a ``README for the agent'': what you'd tell a new RA, written once.
   \end{itemize}
   \vfill
-  \href{https://agents.md/}{\beamergotobutton{agents.md}}\quad
+  \href{../sample_agents.md/}{\beamergotobutton{agents.md}}
   \href{https://code.claude.com/docs/en/memory}{\beamergotobutton{Claude Code memory}}
 \end{frame}
 
@@ -36,8 +47,7 @@
           data-security notes.
     \item \textbf{MCPs} = connections to external tools/data;
           \textbf{skills} = reusable, on-demand instructions.
-    \item Both run in a sandbox and can execute code + edit files ---
-          power and risk for reproducibility.
+    \item Both run in a sandbox and can execute code!
   \end{itemize}
   \vfill
   \href{https://codersera.com/blog/agents-md-complete-guide-2026/}{\beamergotobutton{AGENTS.md guide}}\quad
@@ -47,14 +57,12 @@
 
 \begin{frame}{Skills: what they are}
   \begin{itemize}
-    \item A folder with a \texttt{SKILL.md} (YAML \texttt{name} + \texttt{description},
-          then Markdown instructions); can bundle scripts + resources.
+    \item A folder with a \texttt{SKILL.md}.
     \item Like an onboarding guide for a repeatable task
           (e.g.\ ``format regression tables'').
-    \item \textbf{Progressive disclosure}: metadata always loaded ($\sim$100 tokens);
-          instructions load on trigger; bundled files/scripts load only when used.
-    \item The \texttt{description} decides when Claude fires the skill --- say
-          \emph{what} it does and \emph{when} to use it.
+    \item Metadata always loaded ($\sim$100 tokens);
+          instructions load on each prompt; rest only when used.
+    \item The \texttt{description} decides when Claude/Codex uses the skill.
   \end{itemize}
   \vfill
   \href{https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview}{\beamergotobutton{Agent Skills docs}}
