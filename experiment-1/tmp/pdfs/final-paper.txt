@@ -1,0 +1,541 @@
+The Economic Geography of Europe                                                      2023 NUTS 2 evidence
+
+
+
+
+               The Economic Geography of Europe:
+                        Regional Disparities in GDP per Capita
+
+                                    Reproducible empirical study
+
+                                             23 July 2026
+
+
+                                                Abstract
+     This paper measures the magnitude and spatial organization of regional economic disparities
+     in Europe using Eurostat’s 2023 GDP-per-capita index and NUTS 2024 level-2 boundaries.
+     An exact one-to-one inner join produces 276 regions: 244 in the EU27 and 32 in four candi-
+     date countries. Across equally weighted regions, the median index is 84, the Gini coefficient is
+     0.219, and the 90-to-10 percentile ratio is 2.62. Spatial association is assessed on log GDP per
+     capita using row-standardized first-order queen contiguity. After excluding 21 regions with-
+     out a contiguity neighbor, global Moran’s I is 0.600 (p = 0.0001, 9,999 random-label permu-
+     tations). The result remains large under raw-index, rook, EU-only, largest-component, and
+     nearest-neighbor specifications. False-discovery-rate-controlled local Moran statistics iden-
+     tify 4 high-high, 17 low-low, and 1 high-low regions. These results establish a pronounced
+     descriptive spatial pattern, not causal spillovers, convergence, or the effects of any particular
+     regional policy.
+
+Keywords: regional inequality; GDP per capita; NUTS 2; spatial autocorrelation; Moran’s I;
+Europe
+
+
+1 Introduction
+Large differences in regional productivity and income generation remain central to European eco-
+nomic policy. The relevant geography is not only national: capital regions, corporate centers,
+industrial belts, rural peripheries, and border areas can differ sharply within the same country.
+At the same time, neighboring regions share markets, infrastructure, institutions, and history.
+Regional inequality and spatial clustering are therefore distinct empirical questions. Dispersion
+measures describe how unequal regional values are, while spatial statistics ask whether similar
+values are located near one another.
+   This paper asks: How strongly, and where, was 2023 GDP per capita spatially clustered
+among neighboring NUTS 2 regions with available Eurostat data? It makes three contributions.
+First, it constructs an auditable cross-section from two official snapshots and documents the exact
+coverage created by the requested inner join. Second, it reports region-equal distributional statis-
+tics and a complete choropleth with insets for outermost regions. Third, it combines global and
+local Moran statistics with permutation inference, explicit island treatment, false-discovery-rate
+control, and prespecified sensitivity checks.
+   The evidence is clear but deliberately descriptive. The region-equal mean is 89.6 and the me-
+dian is 84 relative to an EU27 benchmark of 100. The spatial result is stronger still: Moran’s I for
+log GDP per capita is 0.600, compared with a random-label expectation near zero. The pattern is
+robust to alternative variable transformations, weights, and samples. Local evidence is more se-
+lective: 22 regions survive Benjamini-Hochberg control, of which 17 form low-low cores. Nothing
+in this one-year design identifies why the pattern arose.
+
+
+
+
+                                                    1
+The Economic Geography of Europe                                                 2023 NUTS 2 evidence
+
+
+
+2 Literature review
+The theoretical starting point is the possibility that economic activity concentrates endogenously.
+In the core-periphery model of Krugman [1991], increasing returns, transport costs, and market-
+size feedback can produce agglomeration. That mechanism is a useful interpretation of clustered
+production, but a cross-sectional map cannot test it. A separate growth literature studies beta
+and sigma convergence. Sala-i Martin [1996] distinguishes faster growth among initially poorer
+regions from declining cross-sectional dispersion. A single 2023 observation tests neither.
+   European empirical work has long emphasized the spatial distribution rather than only an aver-
+age convergence coefficient. López-Bazo et al. [1999] connect distributional dynamics and spatial
+association across EU regions. Le Gallo and Ertur [2003] use global and local spatial statistics
+to document persistent high- and low-income clusters in 138 European regions over 1980–1995.
+Ertur et al. [2006] further show that spatial dependence and spatial regimes matter for estimated
+convergence processes. More recently, Iammarino et al. [2019] synthesize the heterogeneous
+trajectories behind European regional inequality and caution against one-size-fits-all interpreta-
+tions. The Ninth Cohesion Report likewise describes EU-wide convergence alongside persistent
+territorial challenges [European Commission, Directorate-General for Regional and Urban Policy,
+2024].
+   The present study updates the descriptive spatial cross-section without claiming a convergence
+test. Global spatial association is measured with Moran’s I [Moran, 1950]; local cluster cores and
+spatial outliers are identified with Anselin’s local indicators of spatial association [Anselin, 1995].
+Because hundreds of local hypotheses are examined, the main map controls the false discovery
+rate following Benjamini and Hochberg [1995].
+
+
+3     Data
+3.1   Economic and geographic sources
+The economic input is Eurostat dataset nama_10r_2gdp, “Gross domestic product at current mar-
+ket prices by NUTS 2 region” [Eurostat, 2026a]. The API query fixes annual frequency, 2023,
+and unit code PPS_HAB_EU27_2020: purchasing power standard per inhabitant, expressed as a
+percentage of the EU27 average. Thus 100 is the population-weighted EU benchmark. It is not
+the mean of NUTS 2 observations, and an equally weighted regional mean need not equal 100.
+   The downloaded CSV has 416 unique geographic keys: 31 national values, 108 NUTS 1 values,
+276 NUTS 2 values, and the EU27 aggregate. The geographic input is the GISCO NUTS 2024 level-
+2 region shapefile at 1:20 million resolution in WGS 84 (EPSG:4326) [Eurostat GISCO, 2026].
+NUTS 2 denotes “basic regions for regional policies,” and the 2024 classification is valid from 1
+January 2024 [Eurostat, 2026c]. The raw geometry contains 299 valid, unique level-2 features.
+
+
+3.2   Cleaning, join, and sample
+Identifiers are preserved as strings, including meaningful zeroes, and the economic constants,
+numeric values, uniqueness, projection, geometry validity, and NUTS level are asserted before
+joining. A one-to-one inner join of CSV geo to shapefile NUTS_ID yields 276 regions and no un-
+matched GDP-side NUTS 2 key. The inner join itself removes every national, NUTS 1, and EU
+aggregate, exactly as required.
+   The resulting sample is broader than the EU27: it contains all 244 EU NUTS 2 regions plus
+32 regions in Montenegro, North Macedonia, Serbia, and Türkiye. Twenty-three mapped regions
+have no selected GDP observation: Albania (3), Bosnia and Herzegovina (3), Switzerland (7), Ice-
+
+
+                                                  2
+The Economic Geography of Europe                                               2023 NUTS 2 evidence
+
+
+
+land (1), Liechtenstein (1), Norway (7), and Kosovo (1). The estimand is therefore the set of Eu-
+rostat NUTS 2 regions with an available value, not every region conventionally understood as
+Europe.
+    Eurostat marks 101 joined observations provisional and 1 estimated. These flags are retained.
+Raw files are never modified; byte sizes, SHA-256 hashes, URLs, retrieval date, anti-joins, edge
+lists, software versions, and every derived output accompany the paper.
+
+
+3.3   Measurement
+GDP per capita measures production located in a region, not disposable household income or
+welfare. Commuting can separate workplace production from residence, and the regional loca-
+tion of multinational profits can elevate corporate centers. Moreover, regional purchasing-power
+parities do not exist; Eurostat applies national conversion factors within each country [Eurostat,
+2026b]. The analysis therefore treats the index as a harmonized production measure and does
+not attach welfare interpretations to small differences.
+
+
+4     Methods
+4.1   Distributional description
+Each NUTS 2 region receives equal weight because the selected file contains no population field.
+Reported statistics include the mean, median, standard deviation, coefficient of variation, per-
+centile ratio, Gini coefficient, and Theil T . They describe the distribution across administrative
+regions, not across people. For additional geographic context, a one-way decomposition reports
+the share of total log-index sum of squares located between country means. This is descriptive
+variance accounting, not a causal country effect.
+
+
+4.2   Spatial weights and global association
+The prespecified outcome for spatial inference is xi = log(GDP indexi ). Logging makes propor-
+tional gaps more symmetric and reduces leverage from a few corporate and capital regions; the
+unlogged index is retained as a sensitivity check. The primary binary graph links regions whose
+generalized polygons share a boundary or point (first-order queen contiguity). Its 590 undirected
+edges are row standardized:
+                                                  wij
+                                            R
+                                          wij =∑         .
+                                                   j wij
+
+The graph has 21 zero-neighbor regions and 25 components. Islands remain in every descriptive
+table and map but are not assigned an artificial neighbor. Spatial inference uses the induced graph
+of the remaining 255 regions, re-centering the outcome in that sample.
+   For centered values zi = xi − x̄, global Moran’s statistic is
+                                   ∑ ∑ R
+                                n i j wij zi zj               ∑∑
+                           I=           ∑ 2       ,    S0 =            R
+                                                                     wij .
+                               S0           z
+                                          i i                   i  j
+
+The null is random labeling of the observed values over the fixed graph. A one-sided greater test
+uses 9,999 permutations and the finite simulation correction
+
+                                          1 + #{I (b) ≥ Iobs }
+                                     p=                        .
+                                                B+1
+
+
+                                                 3
+The Economic Geography of Europe                                                            2023 NUTS 2 evidence
+
+
+
+This evaluates positive spatial association, not sampling uncertainty in the Eurostat estimates.
+
+
+4.3 Local association and robustness
+                                                                           ∑ R
+For each non-island region, Anselin’s local statistic is proportional to zi j wij zj . Conditional
+randomization holds the focal zi fixed and samples neighbor values without replacement from the
+other regions. Two-sided local p-values are centered on each region’s permutation distribution.
+Quadrants are defined by the signs of zi and its spatial lag: high-high (HH), low-low (LL), high-
+low (HL), and low-high (LH). “High” and “low” are relative to the spatial-analysis sample center,
+not necessarily to the EU benchmark of 100.
+   The main local result applies Benjamini-Hochberg control at q = 0.05 across all 255 tests.
+Holm-adjusted results provide a stricter family-wise-error check. Global sensitivity specifica-
+tions use the raw index, a rank-normal transformation, rook contiguity, an EU27-only sample,
+the largest connected component, and a symmetric 5-nearest-neighbor graph on that component.
+Nearest-neighbor centroids and distances are calculated only after projection to EPSG:3035.
+
+
+5     Results
+5.1   Magnitude of regional disparities
+
+                             Table 1: Region-equal descriptive statistics, 2023
+
+                            Statistic                                          Value
+                            Regions                                              276
+                            Countries                                             31
+                            Mean                                                89.6
+                            Median                                              84.0
+                            Standard deviation                                  36.7
+                            Coefficient of variation                          0.410
+                            10th percentile                                     50.0
+                            90th percentile                                    131.0
+                            90/10 ratio                                       2.620
+                            Gini coefficient                                   0.219
+                            Theil T                                           0.078
+                            Share below 75                                    39.1%
+                            Share at or above 100                             33.7%
+                            Between-country share of log variance             54.2%
+         Notes: GDP per capita is an index with EU27 population-weighted average equal to 100. Shares
+         and distributional statistics weight every region equally. The between-country entry is the share
+         of total log-index sum of squares accounted for by deviations of country means.
+
+
+Table 1 shows substantial dispersion. The index ranges from 26 in Şanlıurfa, Diyarbakır (TRC2)
+to 251 in Eastern and Midland (IE06). The median is 84, the standard deviation is 36.7, and
+the coefficient of variation is 0.410. The 90th-percentile region has 2.62 times the index of the
+10th-percentile region. The Gini coefficient is 0.219 and Theil T is 0.078.
+   39.1% of regions fall below 75, while only 33.7% reach or exceed the EU benchmark. These are
+regional fractions, not population shares. Country means account for 54.2% of log-index varia-
+tion, leaving a large within-country component as well. Figure 1 makes both structures visible:
+lower values are common in the east and southeast, but high capital or metropolitan regions ap-
+
+
+                                                        4
+The Economic Geography of Europe                                                                                                                                       2023 NUTS 2 evidence
+
+
+
+pear within several lower-income countries, while important internal gradients are also visible in
+western member states.
+
+Regional GDP per capita across available European NUTS 2 regions, 2023
+Purchasing power standard per inhabitant, EU27 average = 100
+                                                                                                                                                                          French outermost regions
+                                                                                                                                                                            FRY1 Guadeloupe (66)
+
+
+
+
+                                                                                                                                                                             FRY2 Martinique (68)
+
+
+
+
+                                                                                                                                                                              FRY3 Guyane (42)
+
+
+
+
+                                                                                                                                                                             FRY4 La Réunion (64)
+
+
+
+
+                                                                                                                                                                              FRY5 Mayotte (29)
+
+   GDP per capita index
+       <50           100-124
+       50-74         125-149
+       75-99         150+
+
+
+
+
+Notes: Full inner-join sample (n = 276). Policy-relevant classes around the EU benchmark; no population weighting. Candidate-country regions with data are included.
+Sources: Eurostat nama_10r_2gdp and Eurostat GISCO NUTS 2024. Retrieved 23 July 2026.
+
+
+                                                          Figure 1: GDP per capita by NUTS 2 region
+
+
+5.2        Global spatial association
+
+                                                 Table 2: Global Moran results and sensitivity checks
+
+ Specification                                                                                               n        Moran’s I                          E[I]            Permutation p
+ Primary: log, queen                                                                                   255                     0.600               -0.004                            0.0001
+ Raw index, queen                                                                                      255                     0.460               -0.004                            0.0001
+ Rank-normalized, queen                                                                                255                     0.587               -0.004                            0.0001
+ Log, rook                                                                                             255                     0.599               -0.004                            0.0001
+ EU27 only: log, queen                                                                                 223                     0.503               -0.005                            0.0001
+ Largest component: log, queen                                                                         238                     0.600               -0.004                            0.0001
+ Largest component: log, symmetric 5-NN                                                                238                     0.552               -0.004                            0.0001
+  Notes: All specifications use 9,999 one-sided random-label permutations with fixed, recorded seeds. Queen and
+  rook samples omit only zero-neighbor regions. The nearest-neighbor graph is symmetric and restricted to the
+  largest component; its centroids use EPSG:3035.
+
+
+The primary Moran estimate is 0.600, far above its random-label expectation of approximately
+−0.004, with the minimum attainable permutation p-value of 0.0001 (Table 2). A region with
+high log GDP per capita therefore tends to have high-valued polygon neighbors, and the same
+is true for low values. Moran’s I is a measure of arrangement, not the magnitude of inequality
+summarized by the Gini or Theil index.
+
+                                                                                                    5
+The Economic Geography of Europe                                                                                                                                        2023 NUTS 2 evidence
+
+
+
+   The conclusion is insensitive to reasonable choices. The raw-index estimate is 0.460, showing
+that the result is not created by logs. Rook contiguity gives 0.599. Restricting the sample to EU27
+regions reduces the estimate to 0.503 but leaves a large positive pattern. Results for the largest
+component and its projected nearest-neighbor graph are likewise strongly positive. Figure 2 dis-
+plays the global relationship.
+
+                                                   Moran scatterplot
+                                                     Moran's I = 0.600
+                                                     Permutation p = 0.0001
+
+                                               2
+
+
+
+                                               1
+         Scaled row-standardized spatial lag
+
+
+
+
+                                               0
+
+
+
+                                               1
+
+
+
+                                               2
+                                                                                                                                                                        High-High
+                                                                                                                                                                        Low-Low
+                                                                                                                                                                        High-Low
+                                                                                                                                                                        Low-High
+                                               3                                                                                                                        Not significant
+                                                     3                    2                      1                0                  1                              2
+                                                                                               Standardized log GDP per capita index
+                                                     Notes: n = 255 non-island regions; queen contiguity; 9,999 random-label permutations. Point colors use FDR-controlled local results.
+
+                                                               Figure 2: Moran scatterplot for the primary specification
+
+
+5.3   Local clusters and spatial outliers
+
+                                                         Table 3: Local Moran classifications after multiplicity adjustment
+
+                                                                         Category                                        BH FDR               Holm
+                                                                         High-High                                                  4              0
+                                                                         Low-Low                                                   17              7
+                                                                         High-Low                                                   1              1
+                                                                         Low-High                                                   0              0
+                                                                         Not significant                                          233            247
+                                                                         No contiguity neighbor                                    21             21
+                                                   Notes: Counts cover the full joined sample. The 21 zero-neighbor regions are shown
+                                                   separately and are not tested. Benjamini-Hochberg controls the false discovery rate
+                                                   at 0.05; Holm controls the family-wise error rate at 0.05.
+
+
+Local inference is intentionally more conservative than the global test. Benjamini-Hochberg re-
+tains 22 regions: 4 HH, 17 LL, 1 HL, and 0 LH (Table 3). The HH cores are Salzburg and Tirol
+in Austria, Schwaben in Germany, and Northern and Western Ireland. The LL cores lie mainly
+
+
+                                                                                                                6
+The Economic Geography of Europe                                                                                                                                    2023 NUTS 2 evidence
+
+
+
+across eastern and southeastern Türkiye, with additional regions in Serbia, Bulgaria, and north-
+ern Greece. Yugozapaden, which contains Sofia, is the single HL spatial outlier: its index is high
+relative to the analysis center while its contiguous neighbors have a low spatial lag. These are
+cluster cores under the chosen graph, not complete economic “clubs.”
+   Only 8 local results survive Holm adjustment. The contrast between pervasive global asso-
+ciation and a short list of local survivors is not contradictory: global Moran aggregates weakly
+aligned edges across the entire graph, whereas each local test faces a stringent multiplicity burden.
+Figure 3 reports the FDR-controlled categories and explicitly marks regions without a contiguity
+neighbor.
+
+Local spatial association in log GDP per capita, 2023
+Local Moran quadrants retained by Benjamini-Hochberg FDR at q = 0.05
+                                                                                                                                                                           French outermost regions
+                                                                                                                                                                                 FRY1 Guadeloupe
+
+
+
+
+                                                                                                                                                                                  FRY2 Martinique
+
+
+
+
+                                                                                                                                                                                    FRY3 Guyane
+
+
+
+
+                                                                                                                                                                                  FRY4 La Réunion
+
+
+
+
+                                                                                                                                                                                   FRY5 Mayotte
+
+           FDR-controlled category
+       High-High          Low-High
+       Low-Low            Not significant
+       High-Low           No contiguity neighbor
+
+
+
+
+Notes: First-order queen contiguity; row-standardized weights. Inference uses 255 non-islands and 9,999 conditional randomizations. High/low is relative to the analysis-sample mean.
+White regions have no polygon-contiguity neighbor and are not tested. Categories describe association, not causation.
+
+
+                                                       Figure 3: FDR-controlled local Moran clusters
+
+
+
+6       Limitations
+Several limitations bound the interpretation.
+ • Cross-section. One year cannot establish beta convergence, sigma convergence, persistence,
+   or a change in inequality.
+ • No causal design. Spatial association is compatible with many mechanisms, including mar-
+   ket access, national institutions, industrial structure, sorting, common shocks, and shared
+   history. Moran’s I does not identify spillovers or policy effects.
+ • Production versus welfare. Regional GDP is workplace production, not household living
+   standards. Commuting and multinational profit attribution can produce exceptional capital
+   or corporate regions. National rather than regional price converters may conceal subnational
+   cost-of-living differences.
+
+
+                                                                                                     7
+The Economic Geography of Europe                                               2023 NUTS 2 evidence
+
+
+
+ • Coverage and revisions. The available-data sample omits EFTA, the United Kingdom, and
+   several Balkan regions. 101 observations are provisional and 1 is estimated. Eurostat serves
+   the latest vintage, so future downloads may differ from the hashed snapshot.
+ • Zoning and geometry. Results are conditional on NUTS 2024 boundaries and 1:20 million
+   generalized polygons. The modifiable areal unit problem and boundary generalization can
+   affect both dispersion and adjacency. Twenty-one island or outermost regions cannot enter
+   the primary contiguity statistic.
+ • Permutation null. Random labeling answers whether this graph is more spatially organized
+   than arbitrary reassignment. It is not a superpopulation sampling model and does not account
+   for measurement error.
+
+
+7   Conclusion
+Regional GDP per capita in the available Eurostat NUTS 2 cross-section is both unequal and spa-
+tially organized. The region-equal Gini coefficient of 0.219 and 90-to-10 ratio of 2.62 summa-
+rize a wide distribution; country means explain just over half of log variation, leaving substantial
+within-country heterogeneity. Global Moran’s I of 0.600 shows that this distribution is not ran-
+domly arranged over contiguous regions. The positive association persists in every prespecified
+sensitivity check.
+   Local evidence locates a small set of high-high cores in central Europe and Ireland and a larger
+low-low concentration in the southeast, but only 22 regions survive false-discovery-rate control
+and only 8 survive Holm adjustment. The appropriate conclusion is descriptive: Europe’s re-
+gional production geography in 2023 exhibited strong spatial clustering. Explaining that geogra-
+phy requires longitudinal data and a research design capable of separating agglomeration, insti-
+tutions, composition, and policy.
+
+
+Data and code availability
+All code, raw snapshots, hashes, metadata, anti-joins, processed data, spatial weights, tables, fig-
+ures, and build instructions are stored with this paper. The analysis uses only official Eurostat
+and GISCO inputs. Re-running the download script may retrieve a revised vintage; reproducing
+the reported numbers requires the archived raw files and recorded checksums.
+
+
+
+
+                                                 8
+The Economic Geography of Europe                                             2023 NUTS 2 evidence
+
+
+
+References
+Luc Anselin. Local indicators of spatial association: LISA. Geographical Analysis, 27(2):93–115,
+  1995. doi: 10.1111/j.1538-4632.1995.tb00338.x. https://doi.org/10.1111/j.1538-4632.
+  1995.tb00338.x.
+
+Yoav Benjamini and Yosef Hochberg. Controlling the false discovery rate: A practical and pow-
+  erful approach to multiple testing. Journal of the Royal Statistical Society: Series B (Method-
+  ological), 57(1):289–300, 1995. doi: 10.1111/j.2517-6161.1995.tb02031.x. https://doi.org/
+  10.1111/j.2517-6161.1995.tb02031.x.
+
+Cem Ertur, Julie Le Gallo, and Catherine Baumont. The European regional convergence pro-
+  cess, 1980–1995: Do spatial regimes and spatial dependence matter? International Regional
+  Science Review, 29(1):3–34, 2006. doi: 10.1177/0160017605279453. https://doi.org/10.
+  1177/0160017605279453.
+
+European Commission, Directorate-General for Regional and Urban Policy. Ninth report on eco-
+  nomic, social and territorial cohesion. Technical report, Publications Office of the European
+  Union, Luxembourg, 2024. https://doi.org/10.2776/264833.
+
+Eurostat. Gross domestic product (GDP) at current market prices by NUTS 2 region. Dataset
+  nama_10r_2gdp, unit PPS_HAB_EU27_2020, 2026a. 2023 observation; retrieved 23 July 2026.
+  https://doi.org/10.2908/NAMA_10R_2GDP.
+
+Eurostat. Regional economic accounts: Reference metadata, 2026b. Retrieved 23 July 2026.
+  https://ec.europa.eu/eurostat/cache/metadata/en/reg_eco10_esms.htm.
+
+Eurostat. NUTS: Nomenclature of territorial units for statistics: Overview, 2026c. Retrieved 23
+  July 2026. https://ec.europa.eu/eurostat/web/nuts/overview.
+
+Eurostat GISCO. NUTS 2024 statistical regions, level 2, 1:20 million, EPSG:4326, 2026. Shapefile
+  snapshot retrieved 23 July 2026. https://gisco-services.ec.europa.eu/distribution/
+  v2/nuts/nuts-2024-files.html.
+
+Simona Iammarino, Andrés Rodríguez-Pose, and Michael Storper. Regional inequality in Europe:
+  Evidence, theory and policy implications. Journal of Economic Geography, 19(2):273–298,
+  2019. doi: 10.1093/jeg/lby021. https://doi.org/10.1093/jeg/lby021.
+
+Paul Krugman. Increasing returns and economic geography. Journal of Political Economy, 99
+  (3):483–499, 1991. doi: 10.1086/261763. https://doi.org/10.1086/261763.
+
+Julie Le Gallo and Cem Ertur. Exploratory spatial data analysis of the distribution of re-
+  gional per capita GDP in Europe, 1980–1995. Papers in Regional Science, 82(2):175–201,
+  2003. doi: 10.1111/j.1435-5597.2003.tb00010.x. https://doi.org/10.1111/j.1435-5597.
+  2003.tb00010.x.
+
+Enrique López-Bazo, Esther Vayá, Antonio J. Mora, and Jordi Suriñach. Regional economic dy-
+  namics and convergence in the European Union. The Annals of Regional Science, 33(3):343–
+  370, 1999. doi: 10.1007/s001680050109. https://doi.org/10.1007/s001680050109.
+
+P. A. P. Moran. Notes on continuous stochastic phenomena. Biometrika, 37(1–2):17–23, 1950.
+  doi: 10.1093/biomet/37.1-2.17. https://doi.org/10.1093/biomet/37.1-2.17.
+
+Xavier X. Sala-i Martin. Regional cohesion: Evidence and theories of regional growth and con-
+  vergence. European Economic Review, 40(6):1325–1352, 1996. doi: 10.1016/0014-2921(95)
+  00029-1. https://doi.org/10.1016/0014-2921(95)00029-1.
+
+                                               9
+

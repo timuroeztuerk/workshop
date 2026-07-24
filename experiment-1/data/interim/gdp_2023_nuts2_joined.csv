@@ -1,0 +1,277 @@
+NUTS_ID,LEVL_CODE,CNTR_CODE,NAME_LATN,NUTS_NAME,MOUNT_TYPE,URBN_TYPE,COAST_TYPE,NAME_ENGL,NAME_FREN,ISO3_CODE,SVRG_UN,CAPT,EU_STAT,EFTA_STAT,CC_STAT,NAME_GERM,geo,geo_level,TIME_PERIOD,unit,gdp_pc_index,obs_flag,conf_status,is_eu,sample_group,log_gdp_pc_index,gdp_map_class
+AT11,2,AT,Burgenland,Burgenland,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT11,NUTS 2,2023,PPS_HAB_EU27_2020,87,,,True,EU27,4.465908118654584,75-99
+AT12,2,AT,Niederösterreich,Niederösterreich,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT12,NUTS 2,2023,PPS_HAB_EU27_2020,100,,,True,EU27,4.605170185988092,100-124
+AT13,2,AT,Wien,Wien,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT13,NUTS 2,2023,PPS_HAB_EU27_2020,139,,,True,EU27,4.9344739331306915,125-149
+AT21,2,AT,Kärnten,Kärnten,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT21,NUTS 2,2023,PPS_HAB_EU27_2020,115,,,True,EU27,4.74493212836325,100-124
+AT22,2,AT,Steiermark,Steiermark,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT22,NUTS 2,2023,PPS_HAB_EU27_2020,111,,,True,EU27,4.709530201312334,100-124
+AT31,2,AT,Oberösterreich,Oberösterreich,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT31,NUTS 2,2023,PPS_HAB_EU27_2020,123,,,True,EU27,4.812184355372417,100-124
+AT32,2,AT,Salzburg,Salzburg,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT32,NUTS 2,2023,PPS_HAB_EU27_2020,147,,,True,EU27,4.990432586778736,125-149
+AT33,2,AT,Tirol,Tirol,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT33,NUTS 2,2023,PPS_HAB_EU27_2020,128,,,True,EU27,4.852030263919617,125-149
+AT34,2,AT,Vorarlberg,Vorarlberg,,,,Austria,Autriche,AUT,UN Member State,Vienna,T,F,F,Österreich,AT34,NUTS 2,2023,PPS_HAB_EU27_2020,126,,,True,EU27,4.836281906951478,125-149
+BE10,2,BE,Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest,Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE10,NUTS 2,2023,PPS_HAB_EU27_2020,190,,,True,EU27,5.247024072160486,150+
+BE21,2,BE,Prov. Antwerpen,Prov. Antwerpen,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE21,NUTS 2,2023,PPS_HAB_EU27_2020,140,,,True,EU27,4.941642422609304,125-149
+BE22,2,BE,Prov. Limburg (BE),Prov. Limburg (BE),,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE22,NUTS 2,2023,PPS_HAB_EU27_2020,96,,,True,EU27,4.564348191467836,75-99
+BE23,2,BE,Prov. Oost-Vlaanderen,Prov. Oost-Vlaanderen,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE23,NUTS 2,2023,PPS_HAB_EU27_2020,111,,,True,EU27,4.709530201312334,100-124
+BE24,2,BE,Prov. Vlaams-Brabant,Prov. Vlaams-Brabant,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE24,NUTS 2,2023,PPS_HAB_EU27_2020,129,,,True,EU27,4.859812404361672,125-149
+BE25,2,BE,Prov. West-Vlaanderen,Prov. West-Vlaanderen,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE25,NUTS 2,2023,PPS_HAB_EU27_2020,119,,,True,EU27,4.77912349311153,100-124
+BE31,2,BE,Prov. Brabant wallon,Prov. Brabant wallon,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE31,NUTS 2,2023,PPS_HAB_EU27_2020,158,,,True,EU27,5.062595033026967,150+
+BE32,2,BE,Prov. Hainaut,Prov. Hainaut,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE32,NUTS 2,2023,PPS_HAB_EU27_2020,72,,,True,EU27,4.276666119016055,50-74
+BE33,2,BE,Prov. Liège,Prov. Liège,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE33,NUTS 2,2023,PPS_HAB_EU27_2020,87,,,True,EU27,4.465908118654584,75-99
+BE34,2,BE,Prov. Luxembourg (BE),Prov. Luxembourg (BE),,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE34,NUTS 2,2023,PPS_HAB_EU27_2020,73,,,True,EU27,4.290459441148391,50-74
+BE35,2,BE,Prov. Namur,Prov. Namur,,,,Belgium,Belgique,BEL,UN Member State,Brussels,T,F,F,Belgien,BE35,NUTS 2,2023,PPS_HAB_EU27_2020,80,,,True,EU27,4.382026634673881,75-99
+BG31,2,BG,Severozapaden,Северозападен,,,,Bulgaria,Bulgarie,BGR,UN Member State,Sofia,T,F,F,Bulgarien,BG31,NUTS 2,2023,PPS_HAB_EU27_2020,42,,,True,EU27,3.7376696182833684,<50
+BG32,2,BG,Severen tsentralen,Северен централен,,,,Bulgaria,Bulgarie,BGR,UN Member State,Sofia,T,F,F,Bulgarien,BG32,NUTS 2,2023,PPS_HAB_EU27_2020,43,,,True,EU27,3.7612001156935624,<50
+BG33,2,BG,Severoiztochen,Североизточен,,,,Bulgaria,Bulgarie,BGR,UN Member State,Sofia,T,F,F,Bulgarien,BG33,NUTS 2,2023,PPS_HAB_EU27_2020,50,,,True,EU27,3.912023005428146,50-74
+BG34,2,BG,Yugoiztochen,Югоизточен,,,,Bulgaria,Bulgarie,BGR,UN Member State,Sofia,T,F,F,Bulgarien,BG34,NUTS 2,2023,PPS_HAB_EU27_2020,54,,,True,EU27,3.9889840465642745,50-74
+BG41,2,BG,Yugozapaden,Югозападен,,,,Bulgaria,Bulgarie,BGR,UN Member State,Sofia,T,F,F,Bulgarien,BG41,NUTS 2,2023,PPS_HAB_EU27_2020,101,,,True,EU27,4.61512051684126,100-124
+BG42,2,BG,Yuzhen tsentralen,Южен централен,,,,Bulgaria,Bulgarie,BGR,UN Member State,Sofia,T,F,F,Bulgarien,BG42,NUTS 2,2023,PPS_HAB_EU27_2020,41,,,True,EU27,3.713572066704308,<50
+CY00,2,CY,Kýpros,Κύπρος,,,,Cyprus,Chypre,CYP,UN Member State,Nicosia,T,F,F,Zypern,CY00,NUTS 2,2023,PPS_HAB_EU27_2020,97,,,True,EU27,4.574710978503383,75-99
+CZ01,2,CZ,Praha,Praha,,,,Czechia,Tchéquie,CZE,UN Member State,Prague,T,F,F,Tschechien,CZ01,NUTS 2,2023,PPS_HAB_EU27_2020,197,,,True,EU27,5.2832037287379885,150+
+CZ02,2,CZ,Střední Čechy,Střední Čechy,,,,Czechia,Tchéquie,CZE,UN Member State,Prague,T,F,F,Tschechien,CZ02,NUTS 2,2023,PPS_HAB_EU27_2020,82,,,True,EU27,4.406719247264253,75-99
+CZ03,2,CZ,Jihozápad,Jihozápad,,,,Czechia,Tchéquie,CZE,UN Member State,Prague,T,F,F,Tschechien,CZ03,NUTS 2,2023,PPS_HAB_EU27_2020,77,,,True,EU27,4.343805421853684,75-99
+CZ04,2,CZ,Severozápad,Severozápad,,,,Czechia,Tchéquie,CZE,UN Member State,Prague,T,F,F,Tschechien,CZ04,NUTS 2,2023,PPS_HAB_EU27_2020,62,,,True,EU27,4.127134385045092,50-74
+CZ05,2,CZ,Severovýchod,Severovýchod,,,,Czechia,Tchéquie,CZE,UN Member State,Prague,T,F,F,Tschechien,CZ05,NUTS 2,2023,PPS_HAB_EU27_2020,74,,,True,EU27,4.30406509320417,50-74
+CZ06,2,CZ,Jihovýchod,Jihovýchod,,,,Czechia,Tchéquie,CZE,UN Member State,Prague,T,F,F,Tschechien,CZ06,NUTS 2,2023,PPS_HAB_EU27_2020,85,,,True,EU27,4.442651256490317,75-99
+CZ07,2,CZ,Střední Morava,Střední Morava,,,,Czechia,Tchéquie,CZE,UN Member State,Prague,T,F,F,Tschechien,CZ07,NUTS 2,2023,PPS_HAB_EU27_2020,74,,,True,EU27,4.30406509320417,50-74
+CZ08,2,CZ,Moravskoslezsko,Moravskoslezsko,,,,Czechia,Tchéquie,CZE,UN Member State,Prague,T,F,F,Tschechien,CZ08,NUTS 2,2023,PPS_HAB_EU27_2020,70,,,True,EU27,4.248495242049359,50-74
+DE11,2,DE,Stuttgart,Stuttgart,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE11,NUTS 2,2023,PPS_HAB_EU27_2020,156,p,,True,EU27,5.049856007249537,150+
+DE12,2,DE,Karlsruhe,Karlsruhe,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE12,NUTS 2,2023,PPS_HAB_EU27_2020,126,p,,True,EU27,4.836281906951478,125-149
+DE13,2,DE,Freiburg,Freiburg,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE13,NUTS 2,2023,PPS_HAB_EU27_2020,107,p,,True,EU27,4.672828834461906,100-124
+DE14,2,DE,Tübingen,Tübingen,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE14,NUTS 2,2023,PPS_HAB_EU27_2020,124,p,,True,EU27,4.820281565605037,100-124
+DE21,2,DE,Oberbayern,Oberbayern,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE21,NUTS 2,2023,PPS_HAB_EU27_2020,174,p,,True,EU27,5.159055299214529,150+
+DE22,2,DE,Niederbayern,Niederbayern,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE22,NUTS 2,2023,PPS_HAB_EU27_2020,116,p,,True,EU27,4.7535901911063645,100-124
+DE23,2,DE,Oberpfalz,Oberpfalz,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE23,NUTS 2,2023,PPS_HAB_EU27_2020,126,p,,True,EU27,4.836281906951478,125-149
+DE24,2,DE,Oberfranken,Oberfranken,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE24,NUTS 2,2023,PPS_HAB_EU27_2020,111,p,,True,EU27,4.709530201312334,100-124
+DE25,2,DE,Mittelfranken,Mittelfranken,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE25,NUTS 2,2023,PPS_HAB_EU27_2020,129,p,,True,EU27,4.859812404361672,125-149
+DE26,2,DE,Unterfranken,Unterfranken,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE26,NUTS 2,2023,PPS_HAB_EU27_2020,118,p,,True,EU27,4.770684624465665,100-124
+DE27,2,DE,Schwaben,Schwaben,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE27,NUTS 2,2023,PPS_HAB_EU27_2020,112,p,,True,EU27,4.718498871295094,100-124
+DE30,2,DE,Berlin,Berlin,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE30,NUTS 2,2023,PPS_HAB_EU27_2020,127,p,,True,EU27,4.844187086458591,125-149
+DE40,2,DE,Brandenburg,Brandenburg,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE40,NUTS 2,2023,PPS_HAB_EU27_2020,87,p,,True,EU27,4.465908118654584,75-99
+DE50,2,DE,Bremen,Bremen,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE50,NUTS 2,2023,PPS_HAB_EU27_2020,135,p,,True,EU27,4.90527477843843,125-149
+DE60,2,DE,Hamburg,Hamburg,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE60,NUTS 2,2023,PPS_HAB_EU27_2020,195,p,,True,EU27,5.272999558563747,150+
+DE71,2,DE,Darmstadt,Darmstadt,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE71,NUTS 2,2023,PPS_HAB_EU27_2020,149,p,,True,EU27,5.003946305945459,125-149
+DE72,2,DE,Gießen,Gießen,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE72,NUTS 2,2023,PPS_HAB_EU27_2020,101,p,,True,EU27,4.61512051684126,100-124
+DE73,2,DE,Kassel,Kassel,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE73,NUTS 2,2023,PPS_HAB_EU27_2020,109,p,,True,EU27,4.6913478822291435,100-124
+DE80,2,DE,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE80,NUTS 2,2023,PPS_HAB_EU27_2020,87,p,,True,EU27,4.465908118654584,75-99
+DE91,2,DE,Braunschweig,Braunschweig,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE91,NUTS 2,2023,PPS_HAB_EU27_2020,130,p,,True,EU27,4.867534450455582,125-149
+DE92,2,DE,Hannover,Hannover,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE92,NUTS 2,2023,PPS_HAB_EU27_2020,112,p,,True,EU27,4.718498871295094,100-124
+DE93,2,DE,Lüneburg,Lüneburg,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE93,NUTS 2,2023,PPS_HAB_EU27_2020,85,p,,True,EU27,4.442651256490317,75-99
+DE94,2,DE,Weser-Ems,Weser-Ems,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DE94,NUTS 2,2023,PPS_HAB_EU27_2020,106,p,,True,EU27,4.663439094112067,100-124
+DEA1,2,DE,Düsseldorf,Düsseldorf,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEA1,NUTS 2,2023,PPS_HAB_EU27_2020,118,p,,True,EU27,4.770684624465665,100-124
+DEA2,2,DE,Köln,Köln,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEA2,NUTS 2,2023,PPS_HAB_EU27_2020,120,p,,True,EU27,4.787491742782046,100-124
+DEA3,2,DE,Münster,Münster,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEA3,NUTS 2,2023,PPS_HAB_EU27_2020,97,p,,True,EU27,4.574710978503383,75-99
+DEA4,2,DE,Detmold,Detmold,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEA4,NUTS 2,2023,PPS_HAB_EU27_2020,108,p,,True,EU27,4.68213122712422,100-124
+DEA5,2,DE,Arnsberg,Arnsberg,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEA5,NUTS 2,2023,PPS_HAB_EU27_2020,100,p,,True,EU27,4.605170185988092,100-124
+DEB1,2,DE,Koblenz,Koblenz,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEB1,NUTS 2,2023,PPS_HAB_EU27_2020,97,p,,True,EU27,4.574710978503383,75-99
+DEB2,2,DE,Trier,Trier,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEB2,NUTS 2,2023,PPS_HAB_EU27_2020,90,p,,True,EU27,4.499809670330265,75-99
+DEB3,2,DE,Rheinhessen-Pfalz,Rheinhessen-Pfalz,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEB3,NUTS 2,2023,PPS_HAB_EU27_2020,110,p,,True,EU27,4.700480365792417,100-124
+DEC0,2,DE,Saarland,Saarland,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEC0,NUTS 2,2023,PPS_HAB_EU27_2020,97,p,,True,EU27,4.574710978503383,75-99
+DED2,2,DE,Dresden,Dresden,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DED2,NUTS 2,2023,PPS_HAB_EU27_2020,93,p,,True,EU27,4.532599493153256,75-99
+DED4,2,DE,Chemnitz,Chemnitz,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DED4,NUTS 2,2023,PPS_HAB_EU27_2020,82,p,,True,EU27,4.406719247264253,75-99
+DED5,2,DE,Leipzig,Leipzig,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DED5,NUTS 2,2023,PPS_HAB_EU27_2020,98,p,,True,EU27,4.584967478670572,75-99
+DEE0,2,DE,Sachsen-Anhalt,Sachsen-Anhalt,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEE0,NUTS 2,2023,PPS_HAB_EU27_2020,85,p,,True,EU27,4.442651256490317,75-99
+DEF0,2,DE,Schleswig-Holstein,Schleswig-Holstein,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEF0,NUTS 2,2023,PPS_HAB_EU27_2020,96,p,,True,EU27,4.564348191467836,75-99
+DEG0,2,DE,Thüringen,Thüringen,,,,Germany,Allemagne,DEU,UN Member State,Berlin,T,F,F,Deutschland,DEG0,NUTS 2,2023,PPS_HAB_EU27_2020,84,p,,True,EU27,4.430816798843313,75-99
+DK01,2,DK,Hovedstaden,Hovedstaden,,,,Denmark,Danemark,DNK,UN Member State,Copenhagen,T,F,F,Dänemark,DK01,NUTS 2,2023,PPS_HAB_EU27_2020,170,,,True,EU27,5.135798437050262,150+
+DK02,2,DK,Sjælland,Sjælland,,,,Denmark,Danemark,DNK,UN Member State,Copenhagen,T,F,F,Dänemark,DK02,NUTS 2,2023,PPS_HAB_EU27_2020,89,,,True,EU27,4.48863636973214,75-99
+DK03,2,DK,Syddanmark,Syddanmark,,,,Denmark,Danemark,DNK,UN Member State,Copenhagen,T,F,F,Dänemark,DK03,NUTS 2,2023,PPS_HAB_EU27_2020,109,,,True,EU27,4.6913478822291435,100-124
+DK04,2,DK,Midtjylland,Midtjylland,,,,Denmark,Danemark,DNK,UN Member State,Copenhagen,T,F,F,Dänemark,DK04,NUTS 2,2023,PPS_HAB_EU27_2020,109,,,True,EU27,4.6913478822291435,100-124
+DK05,2,DK,Nordjylland,Nordjylland,,,,Denmark,Danemark,DNK,UN Member State,Copenhagen,T,F,F,Dänemark,DK05,NUTS 2,2023,PPS_HAB_EU27_2020,100,,,True,EU27,4.605170185988092,100-124
+EE00,2,EE,Eesti,Eesti,,,,Estonia,Estonie,EST,UN Member State,Tallinn,T,F,F,Estland,EE00,NUTS 2,2023,PPS_HAB_EU27_2020,80,,,True,EU27,4.382026634673881,75-99
+EL30,2,EL,Attiki,Aττική,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL30,NUTS 2,2023,PPS_HAB_EU27_2020,96,p,,True,EU27,4.564348191467836,75-99
+EL41,2,EL,Voreio Aigaio,Βόρειο Αιγαίο,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL41,NUTS 2,2023,PPS_HAB_EU27_2020,42,p,,True,EU27,3.7376696182833684,<50
+EL42,2,EL,Notio Aigaio,Νότιο Αιγαίο,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL42,NUTS 2,2023,PPS_HAB_EU27_2020,69,p,,True,EU27,4.23410650459726,50-74
+EL43,2,EL,Kriti,Κρήτη,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL43,NUTS 2,2023,PPS_HAB_EU27_2020,59,p,,True,EU27,4.07753744390572,50-74
+EL51,2,EL,"Anatoliki Makedonia, Thraki","Aνατολική Μακεδονία, Θράκη",,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL51,NUTS 2,2023,PPS_HAB_EU27_2020,44,p,,True,EU27,3.784189633918261,<50
+EL52,2,EL,Kentriki Makedonia,Κεντρική Μακεδονία,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL52,NUTS 2,2023,PPS_HAB_EU27_2020,55,p,,True,EU27,4.007333185232471,50-74
+EL53,2,EL,Dytiki Makedonia,Δυτική Μακεδονία,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL53,NUTS 2,2023,PPS_HAB_EU27_2020,50,p,,True,EU27,3.912023005428146,50-74
+EL54,2,EL,Ipeiros,Ήπειρος,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL54,NUTS 2,2023,PPS_HAB_EU27_2020,44,p,,True,EU27,3.784189633918261,<50
+EL61,2,EL,Thessalia,Θεσσαλία,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL61,NUTS 2,2023,PPS_HAB_EU27_2020,52,p,,True,EU27,3.9512437185814275,50-74
+EL62,2,EL,Ionia Nisia,Ιόνια Νησιά,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL62,NUTS 2,2023,PPS_HAB_EU27_2020,63,p,,True,EU27,4.143134726391533,50-74
+EL63,2,EL,Dytiki Elláda,Δυτική Ελλάδα,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL63,NUTS 2,2023,PPS_HAB_EU27_2020,49,p,,True,EU27,3.8918202981106265,<50
+EL64,2,EL,Sterea Elláda,Στερεά Ελλάδα,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL64,NUTS 2,2023,PPS_HAB_EU27_2020,59,p,,True,EU27,4.07753744390572,50-74
+EL65,2,EL,Peloponnisos,Πελοπόννησος,,,,Greece,Grèce,GRC,UN Member State,Athens,T,F,F,Griechenland,EL65,NUTS 2,2023,PPS_HAB_EU27_2020,57,p,,True,EU27,4.04305126783455,50-74
+ES11,2,ES,Galicia,Galicia,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES11,NUTS 2,2023,PPS_HAB_EU27_2020,84,p,,True,EU27,4.430816798843313,75-99
+ES12,2,ES,Principado de Asturias,Principado de Asturias,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES12,NUTS 2,2023,PPS_HAB_EU27_2020,82,p,,True,EU27,4.406719247264253,75-99
+ES13,2,ES,Cantabria,Cantabria,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES13,NUTS 2,2023,PPS_HAB_EU27_2020,83,p,,True,EU27,4.418840607796598,75-99
+ES21,2,ES,País Vasco,País Vasco,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES21,NUTS 2,2023,PPS_HAB_EU27_2020,114,p,,True,EU27,4.736198448394496,100-124
+ES22,2,ES,Comunidad Foral de Navarra,Comunidad Foral de Navarra,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES22,NUTS 2,2023,PPS_HAB_EU27_2020,108,p,,True,EU27,4.68213122712422,100-124
+ES23,2,ES,La Rioja,La Rioja,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES23,NUTS 2,2023,PPS_HAB_EU27_2020,95,p,,True,EU27,4.553876891600541,75-99
+ES24,2,ES,Aragón,Aragón,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES24,NUTS 2,2023,PPS_HAB_EU27_2020,102,p,,True,EU27,4.624972813284271,100-124
+ES30,2,ES,Comunidad de Madrid,Comunidad de Madrid,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES30,NUTS 2,2023,PPS_HAB_EU27_2020,125,p,,True,EU27,4.8283137373023015,125-149
+ES41,2,ES,Castilla y León,Castilla y León,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES41,NUTS 2,2023,PPS_HAB_EU27_2020,86,p,,True,EU27,4.454347296253507,75-99
+ES42,2,ES,Castilla-La Mancha,Castilla-La Mancha,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES42,NUTS 2,2023,PPS_HAB_EU27_2020,73,p,,True,EU27,4.290459441148391,50-74
+ES43,2,ES,Extremadura,Extremadura,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES43,NUTS 2,2023,PPS_HAB_EU27_2020,70,p,,True,EU27,4.248495242049359,50-74
+ES51,2,ES,Cataluña,Cataluña,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES51,NUTS 2,2023,PPS_HAB_EU27_2020,104,p,,True,EU27,4.6443908991413725,100-124
+ES52,2,ES,Comunitat Valenciana,Comunitat Valenciana,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES52,NUTS 2,2023,PPS_HAB_EU27_2020,78,p,,True,EU27,4.356708826689592,75-99
+ES53,2,ES,Illes Balears,Illes Balears,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES53,NUTS 2,2023,PPS_HAB_EU27_2020,99,p,,True,EU27,4.59511985013459,75-99
+ES61,2,ES,Andalucía,Andalucía,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES61,NUTS 2,2023,PPS_HAB_EU27_2020,68,p,,True,EU27,4.219507705176107,50-74
+ES62,2,ES,Región de Murcia,Región de Murcia,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES62,NUTS 2,2023,PPS_HAB_EU27_2020,75,p,,True,EU27,4.31748811353631,75-99
+ES63,2,ES,Ciudad de Ceuta,Ciudad de Ceuta,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES63,NUTS 2,2023,PPS_HAB_EU27_2020,66,p,,True,EU27,4.189654742026425,50-74
+ES64,2,ES,Ciudad de Melilla,Ciudad de Melilla,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES64,NUTS 2,2023,PPS_HAB_EU27_2020,60,p,,True,EU27,4.0943445622221,50-74
+ES70,2,ES,Canarias,Canarias,,,,Spain,Espagne,ESP,UN Member State,Madrid,T,F,F,Spanien,ES70,NUTS 2,2023,PPS_HAB_EU27_2020,71,p,,True,EU27,4.2626798770413155,50-74
+FI19,2,FI,Länsi-Suomi,Länsi-Suomi,,,,Finland,Finlande,FIN,UN Member State,Helsinki,T,F,F,Finnland,FI19,NUTS 2,2023,PPS_HAB_EU27_2020,94,,,True,EU27,4.543294782270004,75-99
+FI1B,2,FI,Helsinki-Uusimaa,Helsinki-Uusimaa,,,,Finland,Finlande,FIN,UN Member State,Helsinki,T,F,F,Finnland,FI1B,NUTS 2,2023,PPS_HAB_EU27_2020,131,,,True,EU27,4.875197323201151,125-149
+FI1C,2,FI,Etelä-Suomi,Etelä-Suomi,,,,Finland,Finlande,FIN,UN Member State,Helsinki,T,F,F,Finnland,FI1C,NUTS 2,2023,PPS_HAB_EU27_2020,89,,,True,EU27,4.48863636973214,75-99
+FI1D,2,FI,Pohjois- ja Itä-Suomi,Pohjois- ja Itä-Suomi,,,,Finland,Finlande,FIN,UN Member State,Helsinki,T,F,F,Finnland,FI1D,NUTS 2,2023,PPS_HAB_EU27_2020,88,,,True,EU27,4.477336814478207,75-99
+FI20,2,FI,Åland,Åland,,,,Finland,Finlande,FIN,UN Member State,Helsinki,T,F,F,Finnland,FI20,NUTS 2,2023,PPS_HAB_EU27_2020,114,,,True,EU27,4.736198448394496,100-124
+FR10,2,FR,Ile-de-France,Ile-de-France,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FR10,NUTS 2,2023,PPS_HAB_EU27_2020,160,p,,True,EU27,5.075173815233827,150+
+FRB0,2,FR,Centre — Val de Loire,Centre — Val de Loire,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRB0,NUTS 2,2023,PPS_HAB_EU27_2020,83,p,,True,EU27,4.418840607796598,75-99
+FRC1,2,FR,Bourgogne,Bourgogne,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRC1,NUTS 2,2023,PPS_HAB_EU27_2020,83,p,,True,EU27,4.418840607796598,75-99
+FRC2,2,FR,Franche-Comté,Franche-Comté,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRC2,NUTS 2,2023,PPS_HAB_EU27_2020,75,p,,True,EU27,4.31748811353631,75-99
+FRD1,2,FR,Basse-Normandie,Basse-Normandie,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRD1,NUTS 2,2023,PPS_HAB_EU27_2020,81,p,,True,EU27,4.394449154672439,75-99
+FRD2,2,FR,Haute-Normandie,Haute-Normandie,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRD2,NUTS 2,2023,PPS_HAB_EU27_2020,84,p,,True,EU27,4.430816798843313,75-99
+FRE1,2,FR,Nord-Pas de Calais,Nord-Pas de Calais,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRE1,NUTS 2,2023,PPS_HAB_EU27_2020,78,p,,True,EU27,4.356708826689592,75-99
+FRE2,2,FR,Picardie,Picardie,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRE2,NUTS 2,2023,PPS_HAB_EU27_2020,74,p,,True,EU27,4.30406509320417,50-74
+FRF1,2,FR,Alsace,Alsace,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRF1,NUTS 2,2023,PPS_HAB_EU27_2020,91,p,,True,EU27,4.51085950651685,75-99
+FRF2,2,FR,Champagne-Ardenne,Champagne-Ardenne,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRF2,NUTS 2,2023,PPS_HAB_EU27_2020,89,p,,True,EU27,4.48863636973214,75-99
+FRF3,2,FR,Lorraine,Lorraine,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRF3,NUTS 2,2023,PPS_HAB_EU27_2020,73,p,,True,EU27,4.290459441148391,50-74
+FRG0,2,FR,Pays de la Loire,Pays de la Loire,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRG0,NUTS 2,2023,PPS_HAB_EU27_2020,88,p,,True,EU27,4.477336814478207,75-99
+FRH0,2,FR,Bretagne,Bretagne,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRH0,NUTS 2,2023,PPS_HAB_EU27_2020,85,p,,True,EU27,4.442651256490317,75-99
+FRI1,2,FR,Aquitaine,Aquitaine,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRI1,NUTS 2,2023,PPS_HAB_EU27_2020,88,p,,True,EU27,4.477336814478207,75-99
+FRI2,2,FR,Limousin,Limousin,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRI2,NUTS 2,2023,PPS_HAB_EU27_2020,76,p,,True,EU27,4.330733340286331,75-99
+FRI3,2,FR,Poitou-Charentes,Poitou-Charentes,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRI3,NUTS 2,2023,PPS_HAB_EU27_2020,83,p,,True,EU27,4.418840607796598,75-99
+FRJ1,2,FR,Languedoc-Roussillon,Languedoc-Roussillon,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRJ1,NUTS 2,2023,PPS_HAB_EU27_2020,78,p,,True,EU27,4.356708826689592,75-99
+FRJ2,2,FR,Midi-Pyrénées,Midi-Pyrénées,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRJ2,NUTS 2,2023,PPS_HAB_EU27_2020,90,p,,True,EU27,4.499809670330265,75-99
+FRK1,2,FR,Auvergne,Auvergne,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRK1,NUTS 2,2023,PPS_HAB_EU27_2020,81,p,,True,EU27,4.394449154672439,75-99
+FRK2,2,FR,Rhône-Alpes,Rhône-Alpes,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRK2,NUTS 2,2023,PPS_HAB_EU27_2020,102,p,,True,EU27,4.624972813284271,100-124
+FRL0,2,FR,Provence-Alpes-Côte d’Azur,Provence-Alpes-Côte d’Azur,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRL0,NUTS 2,2023,PPS_HAB_EU27_2020,97,p,,True,EU27,4.574710978503383,75-99
+FRM0,2,FR,Corse,Corse,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRM0,NUTS 2,2023,PPS_HAB_EU27_2020,86,p,,True,EU27,4.454347296253507,75-99
+FRY1,2,FR,Guadeloupe,Guadeloupe,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRY1,NUTS 2,2023,PPS_HAB_EU27_2020,66,p,,True,EU27,4.189654742026425,50-74
+FRY2,2,FR,Martinique,Martinique,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRY2,NUTS 2,2023,PPS_HAB_EU27_2020,68,p,,True,EU27,4.219507705176107,50-74
+FRY3,2,FR,Guyane,Guyane,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRY3,NUTS 2,2023,PPS_HAB_EU27_2020,42,p,,True,EU27,3.7376696182833684,<50
+FRY4,2,FR,La Réunion,La Réunion,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRY4,NUTS 2,2023,PPS_HAB_EU27_2020,64,p,,True,EU27,4.1588830833596715,50-74
+FRY5,2,FR,Mayotte,Mayotte,,,,France,France,FRA,UN Member State,Paris,T,F,F,Frankreich,FRY5,NUTS 2,2023,PPS_HAB_EU27_2020,29,p,,True,EU27,3.367295829986474,<50
+HR02,2,HR,Panonska Hrvatska,Panonska Hrvatska,,,,Croatia,Croatie,HRV,UN Member State,Zagreb,T,F,F,Kroatien,HR02,NUTS 2,2023,PPS_HAB_EU27_2020,53,,,True,EU27,3.970291913552122,50-74
+HR03,2,HR,Jadranska Hrvatska,Jadranska Hrvatska,,,,Croatia,Croatie,HRV,UN Member State,Zagreb,T,F,F,Kroatien,HR03,NUTS 2,2023,PPS_HAB_EU27_2020,73,,,True,EU27,4.290459441148391,50-74
+HR05,2,HR,Grad Zagreb,Grad Zagreb,,,,Croatia,Croatie,HRV,UN Member State,Zagreb,T,F,F,Kroatien,HR05,NUTS 2,2023,PPS_HAB_EU27_2020,131,,,True,EU27,4.875197323201151,125-149
+HR06,2,HR,Sjeverna Hrvatska,Sjeverna Hrvatska,,,,Croatia,Croatie,HRV,UN Member State,Zagreb,T,F,F,Kroatien,HR06,NUTS 2,2023,PPS_HAB_EU27_2020,66,,,True,EU27,4.189654742026425,50-74
+HU11,2,HU,Budapest,Budapest,,,,Hungary,Hongrie,HUN,UN Member State,Budapest,T,F,F,Ungarn,HU11,NUTS 2,2023,PPS_HAB_EU27_2020,164,,,True,EU27,5.099866427824199,150+
+HU12,2,HU,Pest,Pest,,,,Hungary,Hongrie,HUN,UN Member State,Budapest,T,F,F,Ungarn,HU12,NUTS 2,2023,PPS_HAB_EU27_2020,65,,,True,EU27,4.174387269895637,50-74
+HU21,2,HU,Közép-Dunántúl,Közép-Dunántúl,,,,Hungary,Hongrie,HUN,UN Member State,Budapest,T,F,F,Ungarn,HU21,NUTS 2,2023,PPS_HAB_EU27_2020,66,,,True,EU27,4.189654742026425,50-74
+HU22,2,HU,Nyugat-Dunántúl,Nyugat-Dunántúl,,,,Hungary,Hongrie,HUN,UN Member State,Budapest,T,F,F,Ungarn,HU22,NUTS 2,2023,PPS_HAB_EU27_2020,67,,,True,EU27,4.204692619390966,50-74
+HU23,2,HU,Dél-Dunántúl,Dél-Dunántúl,,,,Hungary,Hongrie,HUN,UN Member State,Budapest,T,F,F,Ungarn,HU23,NUTS 2,2023,PPS_HAB_EU27_2020,50,,,True,EU27,3.912023005428146,50-74
+HU31,2,HU,Észak-Magyarország,Észak-Magyarország,,,,Hungary,Hongrie,HUN,UN Member State,Budapest,T,F,F,Ungarn,HU31,NUTS 2,2023,PPS_HAB_EU27_2020,48,,,True,EU27,3.871201010907891,<50
+HU32,2,HU,Észak-Alföld,Észak-Alföld,,,,Hungary,Hongrie,HUN,UN Member State,Budapest,T,F,F,Ungarn,HU32,NUTS 2,2023,PPS_HAB_EU27_2020,49,,,True,EU27,3.8918202981106265,<50
+HU33,2,HU,Dél-Alföld,Dél-Alföld,,,,Hungary,Hongrie,HUN,UN Member State,Budapest,T,F,F,Ungarn,HU33,NUTS 2,2023,PPS_HAB_EU27_2020,54,,,True,EU27,3.9889840465642745,50-74
+IE04,2,IE,Northern and Western,Northern and Western,,,,Ireland,Irlande,IRL,UN Member State,Dublin,T,F,F,Irland,IE04,NUTS 2,2023,PPS_HAB_EU27_2020,104,,,True,EU27,4.6443908991413725,100-124
+IE05,2,IE,Southern,Southern,,,,Ireland,Irlande,IRL,UN Member State,Dublin,T,F,F,Irland,IE05,NUTS 2,2023,PPS_HAB_EU27_2020,229,,,True,EU27,5.43372200355424,150+
+IE06,2,IE,Eastern and Midland,Eastern and Midland,,,,Ireland,Irlande,IRL,UN Member State,Dublin,T,F,F,Irland,IE06,NUTS 2,2023,PPS_HAB_EU27_2020,251,,,True,EU27,5.5254529391317835,150+
+ITC1,2,IT,Piemonte,Piemonte,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITC1,NUTS 2,2023,PPS_HAB_EU27_2020,101,,,True,EU27,4.61512051684126,100-124
+ITC2,2,IT,Valle d’Aosta/Vallée d’Aoste,Valle d’Aosta/Vallée d’Aoste,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITC2,NUTS 2,2023,PPS_HAB_EU27_2020,128,,,True,EU27,4.852030263919617,125-149
+ITC3,2,IT,Liguria,Liguria,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITC3,NUTS 2,2023,PPS_HAB_EU27_2020,105,,,True,EU27,4.653960350157523,100-124
+ITC4,2,IT,Lombardia,Lombardia,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITC4,NUTS 2,2023,PPS_HAB_EU27_2020,133,,,True,EU27,4.890349128221754,125-149
+ITF1,2,IT,Abruzzo,Abruzzo,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITF1,NUTS 2,2023,PPS_HAB_EU27_2020,84,,,True,EU27,4.430816798843313,75-99
+ITF2,2,IT,Molise,Molise,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITF2,NUTS 2,2023,PPS_HAB_EU27_2020,73,,,True,EU27,4.290459441148391,50-74
+ITF3,2,IT,Campania,Campania,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITF3,NUTS 2,2023,PPS_HAB_EU27_2020,64,,,True,EU27,4.1588830833596715,50-74
+ITF4,2,IT,Puglia,Puglia,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITF4,NUTS 2,2023,PPS_HAB_EU27_2020,64,,,True,EU27,4.1588830833596715,50-74
+ITF5,2,IT,Basilicata,Basilicata,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITF5,NUTS 2,2023,PPS_HAB_EU27_2020,75,,,True,EU27,4.31748811353631,75-99
+ITF6,2,IT,Calabria,Calabria,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITF6,NUTS 2,2023,PPS_HAB_EU27_2020,57,,,True,EU27,4.04305126783455,50-74
+ITG1,2,IT,Sicilia,Sicilia,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITG1,NUTS 2,2023,PPS_HAB_EU27_2020,60,,,True,EU27,4.0943445622221,50-74
+ITG2,2,IT,Sardegna,Sardegna,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITG2,NUTS 2,2023,PPS_HAB_EU27_2020,72,,,True,EU27,4.276666119016055,50-74
+ITH1,2,IT,Provincia Autonoma di Bolzano/Bozen,Provincia Autonoma di Bolzano/Bozen,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITH1,NUTS 2,2023,PPS_HAB_EU27_2020,166,,,True,EU27,5.111987788356544,150+
+ITH2,2,IT,Provincia Autonoma di Trento,Provincia Autonoma di Trento,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITH2,NUTS 2,2023,PPS_HAB_EU27_2020,127,,,True,EU27,4.844187086458591,125-149
+ITH3,2,IT,Veneto,Veneto,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITH3,NUTS 2,2023,PPS_HAB_EU27_2020,110,,,True,EU27,4.700480365792417,100-124
+ITH4,2,IT,Friuli-Venezia Giulia,Friuli-Venezia Giulia,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITH4,NUTS 2,2023,PPS_HAB_EU27_2020,102,,,True,EU27,4.624972813284271,100-124
+ITH5,2,IT,Emilia-Romagna,Emilia-Romagna,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITH5,NUTS 2,2023,PPS_HAB_EU27_2020,118,,,True,EU27,4.770684624465665,100-124
+ITI1,2,IT,Toscana,Toscana,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITI1,NUTS 2,2023,PPS_HAB_EU27_2020,103,,,True,EU27,4.634728988229636,100-124
+ITI2,2,IT,Umbria,Umbria,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITI2,NUTS 2,2023,PPS_HAB_EU27_2020,85,,,True,EU27,4.442651256490317,75-99
+ITI3,2,IT,Marche,Marche,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITI3,NUTS 2,2023,PPS_HAB_EU27_2020,90,,,True,EU27,4.499809670330265,75-99
+ITI4,2,IT,Lazio,Lazio,,,,Italy,Italie,ITA,UN Member State,Rome,T,F,F,Italien,ITI4,NUTS 2,2023,PPS_HAB_EU27_2020,114,,,True,EU27,4.736198448394496,100-124
+LT01,2,LT,Sostinės regionas,Sostinės regionas,,,,Lithuania,Lituanie,LTU,UN Member State,Vilnius,T,F,F,Litauen,LT01,NUTS 2,2023,PPS_HAB_EU27_2020,131,,,True,EU27,4.875197323201151,125-149
+LT02,2,LT,Vidurio ir vakarų Lietuvos regionas,Vidurio ir vakarų Lietuvos regionas,,,,Lithuania,Lituanie,LTU,UN Member State,Vilnius,T,F,F,Litauen,LT02,NUTS 2,2023,PPS_HAB_EU27_2020,67,,,True,EU27,4.204692619390966,50-74
+LU00,2,LU,Luxembourg,Luxembourg,,,,Luxembourg,Luxembourg,LUX,UN Member State,Luxembourg,T,F,F,Luxemburg,LU00,NUTS 2,2023,PPS_HAB_EU27_2020,248,,,True,EU27,5.5134287461649825,150+
+LV00,2,LV,Latvija,Latvija,,,,Latvia,Lettonie,LVA,UN Member State,Riga,T,F,F,Lettland,LV00,NUTS 2,2023,PPS_HAB_EU27_2020,70,,,True,EU27,4.248495242049359,50-74
+ME00,2,ME,Crna Gora,Црна Гора,,,,Montenegro,Monténégro,MNE,UN Member State,Podgorica,F,F,T,Montenegro,ME00,NUTS 2,2023,PPS_HAB_EU27_2020,52,,,False,candidate country,3.9512437185814275,50-74
+MK00,2,MK,Severna Makedonija,Северна Македонија,,,,North Macedonia,Macédoine du Nord,MKD,UN Member State,Skopje,F,F,T,Nordmazedonien,MK00,NUTS 2,2023,PPS_HAB_EU27_2020,41,e,,False,candidate country,3.713572066704308,<50
+MT00,2,MT,Malta,Malta,,,,Malta,Malte,MLT,UN Member State,Valletta,T,F,F,Malta,MT00,NUTS 2,2023,PPS_HAB_EU27_2020,109,,,True,EU27,4.6913478822291435,100-124
+NL11,2,NL,Groningen,Groningen,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL11,NUTS 2,2023,PPS_HAB_EU27_2020,120,,,True,EU27,4.787491742782046,100-124
+NL12,2,NL,Friesland (NL),Friesland (NL),,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL12,NUTS 2,2023,PPS_HAB_EU27_2020,96,,,True,EU27,4.564348191467836,75-99
+NL13,2,NL,Drenthe,Drenthe,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL13,NUTS 2,2023,PPS_HAB_EU27_2020,93,,,True,EU27,4.532599493153256,75-99
+NL21,2,NL,Overijssel,Overijssel,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL21,NUTS 2,2023,PPS_HAB_EU27_2020,112,,,True,EU27,4.718498871295094,100-124
+NL22,2,NL,Gelderland,Gelderland,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL22,NUTS 2,2023,PPS_HAB_EU27_2020,110,,,True,EU27,4.700480365792417,100-124
+NL23,2,NL,Flevoland,Flevoland,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL23,NUTS 2,2023,PPS_HAB_EU27_2020,103,,,True,EU27,4.634728988229636,100-124
+NL32,2,NL,Noord-Holland,Noord-Holland,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL32,NUTS 2,2023,PPS_HAB_EU27_2020,172,,,True,EU27,5.147494476813453,150+
+NL34,2,NL,Zeeland,Zeeland,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL34,NUTS 2,2023,PPS_HAB_EU27_2020,112,,,True,EU27,4.718498871295094,100-124
+NL35,2,NL,Utrecht,Utrecht,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL35,NUTS 2,2023,PPS_HAB_EU27_2020,157,,,True,EU27,5.056245805348308,150+
+NL36,2,NL,Zuid-Holland,Zuid-Holland,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL36,NUTS 2,2023,PPS_HAB_EU27_2020,126,,,True,EU27,4.836281906951478,125-149
+NL41,2,NL,Noord-Brabant,Noord-Brabant,,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL41,NUTS 2,2023,PPS_HAB_EU27_2020,135,,,True,EU27,4.90527477843843,125-149
+NL42,2,NL,Limburg (NL),Limburg (NL),,,,Netherlands,Pays-Bas,NLD,UN Member State,Amsterdam,T,F,F,Niederlande,NL42,NUTS 2,2023,PPS_HAB_EU27_2020,109,,,True,EU27,4.6913478822291435,100-124
+PL21,2,PL,Małopolskie,Małopolskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL21,NUTS 2,2023,PPS_HAB_EU27_2020,69,,,True,EU27,4.23410650459726,50-74
+PL22,2,PL,Śląskie,Śląskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL22,NUTS 2,2023,PPS_HAB_EU27_2020,79,,,True,EU27,4.3694478524670215,75-99
+PL41,2,PL,Wielkopolskie,Wielkopolskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL41,NUTS 2,2023,PPS_HAB_EU27_2020,81,,,True,EU27,4.394449154672439,75-99
+PL42,2,PL,Zachodniopomorskie,Zachodniopomorskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL42,NUTS 2,2023,PPS_HAB_EU27_2020,63,,,True,EU27,4.143134726391533,50-74
+PL43,2,PL,Lubuskie,Lubuskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL43,NUTS 2,2023,PPS_HAB_EU27_2020,61,,,True,EU27,4.110873864173311,50-74
+PL51,2,PL,Dolnośląskie,Dolnośląskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL51,NUTS 2,2023,PPS_HAB_EU27_2020,82,,,True,EU27,4.406719247264253,75-99
+PL52,2,PL,Opolskie,Opolskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL52,NUTS 2,2023,PPS_HAB_EU27_2020,62,,,True,EU27,4.127134385045092,50-74
+PL61,2,PL,Kujawsko-pomorskie,Kujawsko-pomorskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL61,NUTS 2,2023,PPS_HAB_EU27_2020,62,,,True,EU27,4.127134385045092,50-74
+PL62,2,PL,Warmińsko-mazurskie,Warmińsko-mazurskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL62,NUTS 2,2023,PPS_HAB_EU27_2020,54,,,True,EU27,3.9889840465642745,50-74
+PL63,2,PL,Pomorskie,Pomorskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL63,NUTS 2,2023,PPS_HAB_EU27_2020,73,,,True,EU27,4.290459441148391,50-74
+PL71,2,PL,Łódzkie,Łódzkie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL71,NUTS 2,2023,PPS_HAB_EU27_2020,73,,,True,EU27,4.290459441148391,50-74
+PL72,2,PL,Świętokrzyskie,Świętokrzyskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL72,NUTS 2,2023,PPS_HAB_EU27_2020,57,,,True,EU27,4.04305126783455,50-74
+PL81,2,PL,Lubelskie,Lubelskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL81,NUTS 2,2023,PPS_HAB_EU27_2020,53,,,True,EU27,3.970291913552122,50-74
+PL82,2,PL,Podkarpackie,Podkarpackie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL82,NUTS 2,2023,PPS_HAB_EU27_2020,55,,,True,EU27,4.007333185232471,50-74
+PL84,2,PL,Podlaskie,Podlaskie,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL84,NUTS 2,2023,PPS_HAB_EU27_2020,59,,,True,EU27,4.07753744390572,50-74
+PL91,2,PL,Warszawski stołeczny,Warszawski stołeczny,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL91,NUTS 2,2023,PPS_HAB_EU27_2020,155,,,True,EU27,5.043425116919247,150+
+PL92,2,PL,Mazowiecki regionalny,Mazowiecki regionalny,,,,Poland,Pologne,POL,UN Member State,Warsaw,T,F,F,Polen,PL92,NUTS 2,2023,PPS_HAB_EU27_2020,70,,,True,EU27,4.248495242049359,50-74
+PT11,2,PT,Norte,Norte,,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT11,NUTS 2,2023,PPS_HAB_EU27_2020,69,,,True,EU27,4.23410650459726,50-74
+PT15,2,PT,Algarve,Algarve,,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT15,NUTS 2,2023,PPS_HAB_EU27_2020,87,,,True,EU27,4.465908118654584,75-99
+PT19,2,PT,Centro (PT),Centro (PT),,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT19,NUTS 2,2023,PPS_HAB_EU27_2020,70,,,True,EU27,4.248495242049359,50-74
+PT1A,2,PT,Grande Lisboa,Grande Lisboa,,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT1A,NUTS 2,2023,PPS_HAB_EU27_2020,127,,,True,EU27,4.844187086458591,125-149
+PT1B,2,PT,Península de Setúbal,Península de Setúbal,,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT1B,NUTS 2,2023,PPS_HAB_EU27_2020,54,,,True,EU27,3.9889840465642745,50-74
+PT1C,2,PT,Alentejo,Alentejo,,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT1C,NUTS 2,2023,PPS_HAB_EU27_2020,77,,,True,EU27,4.343805421853684,75-99
+PT1D,2,PT,Oeste e Vale do Tejo,Oeste e Vale do Tejo,,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT1D,NUTS 2,2023,PPS_HAB_EU27_2020,64,,,True,EU27,4.1588830833596715,50-74
+PT20,2,PT,Região Autónoma dos Açores,Região Autónoma dos Açores,,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT20,NUTS 2,2023,PPS_HAB_EU27_2020,71,,,True,EU27,4.2626798770413155,50-74
+PT30,2,PT,Região Autónoma da Madeira,Região Autónoma da Madeira,,,,Portugal,Portugal,PRT,UN Member State,Lisbon,T,F,F,Portugal,PT30,NUTS 2,2023,PPS_HAB_EU27_2020,86,,,True,EU27,4.454347296253507,75-99
+RO11,2,RO,Nord-Vest,Nord-Vest,,,,Romania,Roumanie,ROU,UN Member State,Bucharest,T,F,F,Rumänien,RO11,NUTS 2,2023,PPS_HAB_EU27_2020,69,,,True,EU27,4.23410650459726,50-74
+RO12,2,RO,Centru,Centru,,,,Romania,Roumanie,ROU,UN Member State,Bucharest,T,F,F,Rumänien,RO12,NUTS 2,2023,PPS_HAB_EU27_2020,70,,,True,EU27,4.248495242049359,50-74
+RO21,2,RO,Nord-Est,Nord-Est,,,,Romania,Roumanie,ROU,UN Member State,Bucharest,T,F,F,Rumänien,RO21,NUTS 2,2023,PPS_HAB_EU27_2020,47,,,True,EU27,3.8501476017100584,<50
+RO22,2,RO,Sud-Est,Sud-Est,,,,Romania,Roumanie,ROU,UN Member State,Bucharest,T,F,F,Rumänien,RO22,NUTS 2,2023,PPS_HAB_EU27_2020,57,,,True,EU27,4.04305126783455,50-74
+RO31,2,RO,Sud-Muntenia,Sud-Muntenia,,,,Romania,Roumanie,ROU,UN Member State,Bucharest,T,F,F,Rumänien,RO31,NUTS 2,2023,PPS_HAB_EU27_2020,54,,,True,EU27,3.9889840465642745,50-74
+RO32,2,RO,Bucureşti-Ilfov,Bucureşti-Ilfov,,,,Romania,Roumanie,ROU,UN Member State,Bucharest,T,F,F,Rumänien,RO32,NUTS 2,2023,PPS_HAB_EU27_2020,181,,,True,EU27,5.198497031265826,150+
+RO41,2,RO,Sud-Vest Oltenia,Sud-Vest Oltenia,,,,Romania,Roumanie,ROU,UN Member State,Bucharest,T,F,F,Rumänien,RO41,NUTS 2,2023,PPS_HAB_EU27_2020,59,,,True,EU27,4.07753744390572,50-74
+RO42,2,RO,Vest,Vest,,,,Romania,Roumanie,ROU,UN Member State,Bucharest,T,F,F,Rumänien,RO42,NUTS 2,2023,PPS_HAB_EU27_2020,77,,,True,EU27,4.343805421853684,75-99
+RS11,2,RS,City of Belgrade,Београдски регион,,,,Serbia,Serbie,SRB,UN Member State,Belgrade,F,F,T,Serbien,RS11,NUTS 2,2023,PPS_HAB_EU27_2020,82,p,,False,candidate country,4.406719247264253,75-99
+RS12,2,RS,Autonomous Province of Vojvodina,Регион Војводине,,,,Serbia,Serbie,SRB,UN Member State,Belgrade,F,F,T,Serbien,RS12,NUTS 2,2023,PPS_HAB_EU27_2020,46,p,,False,candidate country,3.828641396489095,<50
+RS21,2,RS,Region Šumadije i Zapadne Srbije,Регион Шумадије и Западне Србије,,,,Serbia,Serbie,SRB,UN Member State,Belgrade,F,F,T,Serbien,RS21,NUTS 2,2023,PPS_HAB_EU27_2020,30,p,,False,candidate country,3.4011973816621555,<50
+RS22,2,RS,Region Južne i Istočne Srbije,Регион Јужне и Источне Србије,,,,Serbia,Serbie,SRB,UN Member State,Belgrade,F,F,T,Serbien,RS22,NUTS 2,2023,PPS_HAB_EU27_2020,35,p,,False,candidate country,3.5553480614894135,<50
+SE11,2,SE,Stockholm,Stockholm,,,,Sweden,Suède,SWE,UN Member State,Stockholm,T,F,F,Schweden,SE11,NUTS 2,2023,PPS_HAB_EU27_2020,151,,,True,EU27,5.017279836814924,150+
+SE12,2,SE,Östra Mellansverige,Östra Mellansverige,,,,Sweden,Suède,SWE,UN Member State,Stockholm,T,F,F,Schweden,SE12,NUTS 2,2023,PPS_HAB_EU27_2020,96,,,True,EU27,4.564348191467836,75-99
+SE21,2,SE,Småland med öarna,Småland med öarna,,,,Sweden,Suède,SWE,UN Member State,Stockholm,T,F,F,Schweden,SE21,NUTS 2,2023,PPS_HAB_EU27_2020,95,,,True,EU27,4.553876891600541,75-99
+SE22,2,SE,Sydsverige,Sydsverige,,,,Sweden,Suède,SWE,UN Member State,Stockholm,T,F,F,Schweden,SE22,NUTS 2,2023,PPS_HAB_EU27_2020,94,,,True,EU27,4.543294782270004,75-99
+SE23,2,SE,Västsverige,Västsverige,,,,Sweden,Suède,SWE,UN Member State,Stockholm,T,F,F,Schweden,SE23,NUTS 2,2023,PPS_HAB_EU27_2020,110,,,True,EU27,4.700480365792417,100-124
+SE31,2,SE,Norra Mellansverige,Norra Mellansverige,,,,Sweden,Suède,SWE,UN Member State,Stockholm,T,F,F,Schweden,SE31,NUTS 2,2023,PPS_HAB_EU27_2020,85,,,True,EU27,4.442651256490317,75-99
+SE32,2,SE,Mellersta Norrland,Mellersta Norrland,,,,Sweden,Suède,SWE,UN Member State,Stockholm,T,F,F,Schweden,SE32,NUTS 2,2023,PPS_HAB_EU27_2020,95,,,True,EU27,4.553876891600541,75-99
+SE33,2,SE,Övre Norrland,Övre Norrland,,,,Sweden,Suède,SWE,UN Member State,Stockholm,T,F,F,Schweden,SE33,NUTS 2,2023,PPS_HAB_EU27_2020,109,,,True,EU27,4.6913478822291435,100-124
+SI03,2,SI,Vzhodna Slovenija,Vzhodna Slovenija,,,,Slovenia,Slovénie,SVN,UN Member State,Ljubljana,T,F,F,Slowenien,SI03,NUTS 2,2023,PPS_HAB_EU27_2020,73,,,True,EU27,4.290459441148391,50-74
+SI04,2,SI,Zahodna Slovenija,Zahodna Slovenija,,,,Slovenia,Slovénie,SVN,UN Member State,Ljubljana,T,F,F,Slowenien,SI04,NUTS 2,2023,PPS_HAB_EU27_2020,112,,,True,EU27,4.718498871295094,100-124
+SK01,2,SK,Bratislavský kraj,Bratislavský kraj,,,,Slovakia,Slovaquie,SVK,UN Member State,Bratislava,T,F,F,Slowakei,SK01,NUTS 2,2023,PPS_HAB_EU27_2020,151,,,True,EU27,5.017279836814924,150+
+SK02,2,SK,Západné Slovensko,Západné Slovensko,,,,Slovakia,Slovaquie,SVK,UN Member State,Bratislava,T,F,F,Slowakei,SK02,NUTS 2,2023,PPS_HAB_EU27_2020,69,,,True,EU27,4.23410650459726,50-74
+SK03,2,SK,Stredné Slovensko,Stredné Slovensko,,,,Slovakia,Slovaquie,SVK,UN Member State,Bratislava,T,F,F,Slowakei,SK03,NUTS 2,2023,PPS_HAB_EU27_2020,61,,,True,EU27,4.110873864173311,50-74
+SK04,2,SK,Východné Slovensko,Východné Slovensko,,,,Slovakia,Slovaquie,SVK,UN Member State,Bratislava,T,F,F,Slowakei,SK04,NUTS 2,2023,PPS_HAB_EU27_2020,54,,,True,EU27,3.9889840465642745,50-74
+TR10,2,TR,İstanbul,İstanbul,,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR10,NUTS 2,2023,PPS_HAB_EU27_2020,108,,,False,candidate country,4.68213122712422,100-124
+TR21,2,TR,"Tekirdağ, Edirne, Kırklareli","Tekirdağ, Edirne, Kırklareli",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR21,NUTS 2,2023,PPS_HAB_EU27_2020,79,,,False,candidate country,4.3694478524670215,75-99
+TR22,2,TR,"Balıkesir, Çanakkale","Balıkesir, Çanakkale",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR22,NUTS 2,2023,PPS_HAB_EU27_2020,63,,,False,candidate country,4.143134726391533,50-74
+TR31,2,TR,İzmir,İzmir,,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR31,NUTS 2,2023,PPS_HAB_EU27_2020,77,,,False,candidate country,4.343805421853684,75-99
+TR32,2,TR,"Aydın, Denizli, Muğla","Aydın, Denizli, Muğla",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR32,NUTS 2,2023,PPS_HAB_EU27_2020,58,,,False,candidate country,4.060443010546419,50-74
+TR33,2,TR,"Manisa, Afyonkarahisar, Kütahya, Uşak","Manisa, Afyonkarahisar, Kütahya, Uşak",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR33,NUTS 2,2023,PPS_HAB_EU27_2020,56,,,False,candidate country,4.02535169073515,50-74
+TR41,2,TR,"Bursa, Eskişehir, Bilecik","Bursa, Eskişehir, Bilecik",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR41,NUTS 2,2023,PPS_HAB_EU27_2020,70,,,False,candidate country,4.248495242049359,50-74
+TR42,2,TR,"Kocaeli, Sakarya, Düzce, Bolu, Yalova","Kocaeli, Sakarya, Düzce, Bolu, Yalova",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR42,NUTS 2,2023,PPS_HAB_EU27_2020,89,,,False,candidate country,4.48863636973214,75-99
+TR51,2,TR,Ankara,Ankara,,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR51,NUTS 2,2023,PPS_HAB_EU27_2020,104,,,False,candidate country,4.6443908991413725,100-124
+TR52,2,TR,"Konya, Karaman","Konya, Karaman",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR52,NUTS 2,2023,PPS_HAB_EU27_2020,54,,,False,candidate country,3.9889840465642745,50-74
+TR61,2,TR,"Antalya, Isparta, Burdur","Antalya, Isparta, Burdur",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR61,NUTS 2,2023,PPS_HAB_EU27_2020,70,,,False,candidate country,4.248495242049359,50-74
+TR62,2,TR,"Adana, Mersin","Adana, Mersin",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR62,NUTS 2,2023,PPS_HAB_EU27_2020,52,,,False,candidate country,3.9512437185814275,50-74
+TR63,2,TR,"Hatay, Kahramanmaraş, Osmaniye","Hatay, Kahramanmaraş, Osmaniye",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR63,NUTS 2,2023,PPS_HAB_EU27_2020,40,,,False,candidate country,3.6888794541139363,<50
+TR71,2,TR,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir","Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR71,NUTS 2,2023,PPS_HAB_EU27_2020,52,,,False,candidate country,3.9512437185814275,50-74
+TR72,2,TR,"Kayseri, Sivas, Yozgat","Kayseri, Sivas, Yozgat",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR72,NUTS 2,2023,PPS_HAB_EU27_2020,50,,,False,candidate country,3.912023005428146,50-74
+TR81,2,TR,"Zonguldak, Karabük, Bartın","Zonguldak, Karabük, Bartın",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR81,NUTS 2,2023,PPS_HAB_EU27_2020,49,,,False,candidate country,3.8918202981106265,<50
+TR82,2,TR,"Kastamonu, Çankırı, Sinop","Kastamonu, Çankırı, Sinop",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR82,NUTS 2,2023,PPS_HAB_EU27_2020,51,,,False,candidate country,3.9318256327243257,50-74
+TR83,2,TR,"Samsun, Tokat, Çorum, Amasya","Samsun, Tokat, Çorum, Amasya",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR83,NUTS 2,2023,PPS_HAB_EU27_2020,43,,,False,candidate country,3.7612001156935624,<50
+TR90,2,TR,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane","Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TR90,NUTS 2,2023,PPS_HAB_EU27_2020,41,,,False,candidate country,3.713572066704308,<50
+TRA1,2,TR,"Erzurum, Erzincan, Bayburt","Erzurum, Erzincan, Bayburt",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TRA1,NUTS 2,2023,PPS_HAB_EU27_2020,44,,,False,candidate country,3.784189633918261,<50
+TRA2,2,TR,"Ağrı, Kars, Iğdır, Ardahan","Ağrı, Kars, Iğdır, Ardahan",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TRA2,NUTS 2,2023,PPS_HAB_EU27_2020,32,,,False,candidate country,3.4657359027997265,<50
+TRB1,2,TR,"Malatya, Elazığ, Bingöl, Tunceli","Malatya, Elazığ, Bingöl, Tunceli",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TRB1,NUTS 2,2023,PPS_HAB_EU27_2020,41,,,False,candidate country,3.713572066704308,<50
+TRB2,2,TR,"Van, Muş, Bitlis, Hakkari","Van, Muş, Bitlis, Hakkari",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TRB2,NUTS 2,2023,PPS_HAB_EU27_2020,28,,,False,candidate country,3.332204510175204,<50
+TRC1,2,TR,"Gaziantep, Adıyaman, Kilis","Gaziantep, Adıyaman, Kilis",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TRC1,NUTS 2,2023,PPS_HAB_EU27_2020,40,,,False,candidate country,3.6888794541139363,<50
+TRC2,2,TR,"Şanlıurfa, Diyarbakır","Şanlıurfa, Diyarbakır",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TRC2,NUTS 2,2023,PPS_HAB_EU27_2020,26,,,False,candidate country,3.258096538021482,<50
+TRC3,2,TR,"Mardin, Batman, Şırnak, Siirt","Mardin, Batman, Şırnak, Siirt",,,,Türkiye,Turquie,TUR,UN Member State,Ankara,F,F,T,Türkei,TRC3,NUTS 2,2023,PPS_HAB_EU27_2020,34,,,False,candidate country,3.5263605246161616,<50

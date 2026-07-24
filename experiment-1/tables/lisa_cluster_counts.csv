@@ -1,0 +1,7 @@
+category,bh_fdr_count,holm_count
+High-High,4,1
+Low-Low,16,7
+High-Low,1,1
+Low-High,0,0
+Not significant,234,246
+No contiguity neighbor,21,21

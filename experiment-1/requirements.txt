@@ -1,0 +1,10 @@
+# Minimum versions for a fresh environment. Exact archived-run versions are
+# recorded in docs/analysis_summary.json.
+numpy>=1.26
+pandas>=2.2
+scipy>=1.14
+matplotlib>=3.9
+geopandas>=1.0
+shapely>=2.0
+pyproj>=3.6
+pyogrio>=0.9

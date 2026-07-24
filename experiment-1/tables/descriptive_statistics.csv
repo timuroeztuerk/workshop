@@ -1,0 +1,20 @@
+statistic,value,unit
+Regions,276.0,count
+Countries,31.0,count
+Mean,89.55072463768116,index
+Median,84.0,index
+Standard deviation,36.69740094116513,index
+Coefficient of variation,0.4097945727367525,ratio
+Minimum,26.0,index
+10th percentile,50.0,index
+25th percentile,64.0,index
+75th percentile,109.0,index
+90th percentile,131.0,index
+Maximum,251.0,index
+90/10 ratio,2.62,ratio
+Gini coefficient,0.21911963382283606,ratio
+Theil T,0.07799341515564366,ratio
+Share below 75,0.391304347826087,share
+Share at or above 100,0.33695652173913043,share
+Share at or above 125,0.15217391304347827,share
+Between-country share of log variance,0.5420479795816895,share

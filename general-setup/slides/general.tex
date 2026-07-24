@@ -1,0 +1,127 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\title{AI Workflows for Empirical Research}
+\subtitle{General Setup: Claude Code \& Codex}
+\author{Timur Öztürk}
+\institute{University of Bayreuth}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{The instructions file}
+  \begin{itemize}
+    \item Agentic tools read a Markdown file at every session start ---
+          persistent project memory.
+    \item Codex ($+\sim$20 tools) call it \texttt{AGENTS.md}; Claude Code calls
+          it \texttt{CLAUDE.md} (and also reads \texttt{AGENTS.md}).
+    \item Open standard since Aug 2025 (Linux Foundation); 60{,}000+ repos.
+          Just Markdown, no required fields.
+    \item Like a ``README for the agent'': what you'd tell a new RA, written once.
+  \end{itemize}
+  \vfill
+  \href{https://agents.md/}{\beamergotobutton{agents.md}}\quad
+  \href{https://code.claude.com/docs/en/memory}{\beamergotobutton{Claude Code memory}}
+\end{frame}
+
+\begin{frame}{Using it well}
+  \begin{itemize}
+    \item Keep it short (Anthropic: $<\sim$200 lines); put run/test commands at the top.
+    \item Sections: overview, setup commands, conventions (e.g.\ cluster SEs),
+          data-security notes.
+    \item \textbf{MCPs} = connections to external tools/data;
+          \textbf{skills} = reusable, on-demand instructions.
+    \item Both run in a sandbox and can execute code + edit files ---
+          power and risk for reproducibility.
+  \end{itemize}
+  \vfill
+  \href{https://codersera.com/blog/agents-md-complete-guide-2026/}{\beamergotobutton{AGENTS.md guide}}\quad
+  \href{https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j}{\beamergotobutton{CLAUDE.md best practices}}\quad
+  \href{https://www.agensi.io/learn/codex-cli-agents-md-complete-guide}{\beamergotobutton{Codex CLI guide}}
+\end{frame}
+
+\begin{frame}{Skills: what they are}
+  \begin{itemize}
+    \item A folder with a \texttt{SKILL.md} (YAML \texttt{name} + \texttt{description},
+          then Markdown instructions); can bundle scripts + resources.
+    \item Like an onboarding guide for a repeatable task
+          (e.g.\ ``format regression tables'').
+    \item \textbf{Progressive disclosure}: metadata always loaded ($\sim$100 tokens);
+          instructions load on trigger; bundled files/scripts load only when used.
+    \item The \texttt{description} decides when Claude fires the skill --- say
+          \emph{what} it does and \emph{when} to use it.
+  \end{itemize}
+  \vfill
+  \href{https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview}{\beamergotobutton{Agent Skills docs}}
+\end{frame}
+
+\begin{frame}{Where to find \& install them}
+  \begin{itemize}
+    \item First-party (trusted): Anthropic's repo + pre-built doc skills
+          (pptx, xlsx, docx, pdf).
+    \item Community directories (vet first): awesome-claude-skills lists,
+          marketplace sites.
+    \item Install by surface: Claude Code = drop in
+          \texttt{\textasciitilde/.claude/skills/} or \texttt{.claude/skills/};
+          claude.ai = upload zip; API = \texttt{/v1/skills}.
+    \item Don't sync across surfaces; API sandbox has no network access.
+  \end{itemize}
+  \vfill
+  \href{https://github.com/anthropics/skills}{\beamergotobutton{anthropics/skills}}\quad
+  \href{https://github.com/ComposioHQ/awesome-claude-skills}{\beamergotobutton{awesome-claude-skills}}
+\end{frame}
+
+\begin{frame}{Are they safe?}
+  \begin{itemize}
+    \item Anthropic: use skills only from trusted sources --- treat like installing software.
+    \item Research: prompt injection in $\sim$36\% of skills studied;
+          $\sim$91\% of malicious ones bundle malware too.
+    \item Audit every file (incl.\ scripts + secondary refs); flag external URL
+          fetches; scope Claude's permissions.
+    \item Not covered by zero-data-retention --- relevant for confidential microdata.
+  \end{itemize}
+  \vfill
+  \href{https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/}{\beamergotobutton{Snyk ToxicSkills}}\quad
+  \href{https://securitylabs.datadoghq.com/articles/malicious-skills-supply-chain-risks-in-coding-agents-with-dynamic-context/}{\beamergotobutton{Datadog Security Labs}}
+\end{frame}
+
+\begin{frame}{MCPs in empirical research (I)}
+  \textbf{What they are, briefly:} standardized connectors that let Claude
+  reach your tools and data (databases, files, APIs, reference managers).
+  \begin{itemize}
+    \item \textbf{Data access:} pull series directly --- e.g.\ FRED MCP exposes
+          800{,}000+ economic time series to Claude.
+    \item \textbf{Literature:} search arXiv / OpenAlex / Semantic Scholar and
+          push hits into Zotero for review.
+    \item \textbf{Your project:} filesystem / database servers so Claude reads
+          your data schema and files in place.
+  \end{itemize}
+  \vfill
+  \href{https://github.com/stefanoamorelli/fred-mcp-server}{\beamergotobutton{FRED MCP}}\quad
+  \href{https://github.com/54yyyu/zotero-mcp}{\beamergotobutton{Zotero MCP}}\quad
+  \href{https://registry.modelcontextprotocol.io/}{\beamergotobutton{MCP Registry}}
+\end{frame}
+
+\begin{frame}{MCPs in empirical research (II)}
+  \textbf{Workflow \& caution:}
+  \begin{itemize}
+    \item Chain steps: fetch data $\to$ clean $\to$ estimate $\to$ draft ---
+          without leaving the agent.
+    \item Reproducibility: version control + issue trackers via MCP keep an
+          audit trail of what changed.
+    \item \textbf{Security:} a server is code with data + execution access;
+          prefer local servers you control, scope credentials, vet third-party ones.
+    \item For confidential microdata: avoid remote servers; treat community
+          servers like any unvetted dependency.
+  \end{itemize}
+  \vfill
+  \href{https://owasp.org/www-community/attacks/MCP_Tool_Poisoning}{\beamergotobutton{Tool poisoning (OWASP)}}\quad
+  \href{https://github.com/hanlulong/awesome-ai-for-economists}{\beamergotobutton{AI for economists}}
+\end{frame}
+
+\end{document}

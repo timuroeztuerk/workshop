@@ -1,0 +1,24 @@
+NUTS_ID,CNTR_CODE,NAME_LATN,EU_STAT,EFTA_STAT,CC_STAT
+AL01,AL,Veri,F,F,T
+AL02,AL,Qender,F,F,T
+AL03,AL,Jug,F,F,T
+BA01,BA,Federacija Bosne i Hercegovine,F,F,T
+BA02,BA,Republika Srpska,F,F,T
+BA03,BA,Brčko District BiH,F,F,T
+CH01,CH,Région lémanique,F,T,F
+CH02,CH,Espace Mittelland,F,T,F
+CH03,CH,Nordwestschweiz,F,T,F
+CH04,CH,Zürich,F,T,F
+CH05,CH,Ostschweiz,F,T,F
+CH06,CH,Zentralschweiz,F,T,F
+CH07,CH,Ticino,F,T,F
+IS00,IS,Ísland,F,T,F
+LI00,LI,Liechtenstein,F,T,F
+NO02,NO,Innlandet,F,T,F
+NO06,NO,Trøndelag/Trööndelage,F,T,F
+NO07,NO,Nord-Norge,F,T,F
+NO08,NO,Oslo og Viken,F,T,F
+NO09,NO,Agder og Sør-Østlandet,F,T,F
+NO0A,NO,Vestlandet,F,T,F
+NO0B,NO,Svalbard og Jan Mayen,F,T,F
+XK00,XK,Kosovo,F,F,F

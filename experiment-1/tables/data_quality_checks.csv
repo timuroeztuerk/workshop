@@ -1,0 +1,8 @@
+check,observed,expected,passed
+Raw GDP rows,416,416,True
+Raw shapefile features,299,299,True
+Inner-joined NUTS 2 regions,276,276,True
+Unmatched GDP NUTS 2 keys,0,0,True
+Shape-only regions,23,23,True
+Invalid joined geometries,0,0,True
+Missing joined GDP values,0,0,True

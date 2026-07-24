@@ -1,0 +1,15 @@
+\frametitle{What goes in it (economics example)}
+\begin{itemize}
+    \item Project overview, setup/build commands, how to run tests.
+    \item Code style + conventions (e.g. cluster SEs at firm level, set seeds).
+    \item Security notes: keep confidential microdata out of scope.
+  \end{itemize}
+  \begin{verbatim}
+  ## Setup commands
+  - Rebuild clean data: make data
+  - Run estimation:     make estimate
+
+  ## Conventions
+  - Cluster SEs at firm level
+  - Never touch data/confidential/
+  \end{verbatim}

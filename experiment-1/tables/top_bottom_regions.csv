@@ -1,0 +1,21 @@
+rank_group,rank,NUTS_ID,NAME_LATN,NAME_ENGL,gdp_pc_index,obs_flag
+Top 10,1,IE06,Eastern and Midland,Ireland,251,
+Top 10,2,LU00,Luxembourg,Luxembourg,248,
+Top 10,3,IE05,Southern,Ireland,229,
+Top 10,4,CZ01,Praha,Czechia,197,
+Top 10,5,DE60,Hamburg,Germany,195,p
+Top 10,6,BE10,Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest,Belgium,190,
+Top 10,7,RO32,Bucureşti-Ilfov,Romania,181,
+Top 10,8,DE21,Oberbayern,Germany,174,p
+Top 10,9,NL32,Noord-Holland,Netherlands,172,
+Top 10,10,DK01,Hovedstaden,Denmark,170,
+Bottom 10,1,TRC2,"Şanlıurfa, Diyarbakır",Türkiye,26,
+Bottom 10,2,TRB2,"Van, Muş, Bitlis, Hakkari",Türkiye,28,
+Bottom 10,3,FRY5,Mayotte,France,29,p
+Bottom 10,4,RS21,Region Šumadije i Zapadne Srbije,Serbia,30,p
+Bottom 10,5,TRA2,"Ağrı, Kars, Iğdır, Ardahan",Türkiye,32,
+Bottom 10,6,TRC3,"Mardin, Batman, Şırnak, Siirt",Türkiye,34,
+Bottom 10,7,RS22,Region Južne i Istočne Srbije,Serbia,35,p
+Bottom 10,8,TR63,"Hatay, Kahramanmaraş, Osmaniye",Türkiye,40,
+Bottom 10,9,TRC1,"Gaziantep, Adıyaman, Kilis",Türkiye,40,
+Bottom 10,10,BG42,Yuzhen tsentralen,Bulgaria,41,
